@@ -1,17 +1,20 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
 using System.Runtime.CompilerServices;
+using Tracio.Data.Interfaces;
+using Tracio.Data.Repositories;
 
 namespace Tracio.Data
 {
     public static  class DependencyInjection
     {
-        public static IServiceCollection AddRepository(this IServiceCollection repo)
+        public static IServiceCollection AddRepository(this IServiceCollection service)
         {
-
-
-
-            return repo;
+            service.AddTransient(typeof(IUnitOfWork), typeof(UnitOfWork));
+            service.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+            service.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            
+            return service;
         }
 
     }

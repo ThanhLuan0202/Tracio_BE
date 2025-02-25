@@ -1,8 +1,28 @@
 [
   {
-    "ContainingType": "Tracio.API.Controllers.tesst",
+    "ContainingType": "Tracio.API.Controllers.ProductsCategoryController",
+    "Method": "GetAllProductCategory",
+    "RelativePath": "api/ProductsCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Tracio.Data.Models.ProductsCategory, Tracio.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracio.API.Controllers.ProductsCategoryController",
     "Method": "Post",
-    "RelativePath": "api/tesst",
+    "RelativePath": "api/ProductsCategory",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -22,9 +42,9 @@
     ]
   },
   {
-    "ContainingType": "Tracio.API.Controllers.tesst",
+    "ContainingType": "Tracio.API.Controllers.ProductsCategoryController",
     "Method": "Get",
-    "RelativePath": "api/tesst/{id}",
+    "RelativePath": "api/ProductsCategory/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -48,9 +68,9 @@
     ]
   },
   {
-    "ContainingType": "Tracio.API.Controllers.tesst",
+    "ContainingType": "Tracio.API.Controllers.ProductsCategoryController",
     "Method": "Put",
-    "RelativePath": "api/tesst/{id}",
+    "RelativePath": "api/ProductsCategory/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -75,9 +95,9 @@
     ]
   },
   {
-    "ContainingType": "Tracio.API.Controllers.tesst",
+    "ContainingType": "Tracio.API.Controllers.ProductsCategoryController",
     "Method": "Delete",
-    "RelativePath": "api/tesst/{id}",
+    "RelativePath": "api/ProductsCategory/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -95,16 +115,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "Tracio.API.Controllers.tesst",
-    "Method": "GetRoles",
-    "RelativePath": "api/tesst/roles",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "Tracio.Controllers.WeatherForecastController",

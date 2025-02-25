@@ -14,6 +14,9 @@ builder.Services.AddDbContext<TracioDbContext>(options =>
             sqlOptions.EnableRetryOnFailure(3);
         }));
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+
 // Add services to the container.
 
 builder.Services.AddControllers();
