@@ -13,6 +13,8 @@ namespace Tracio.Data.Mapping
     {
         public AutoMapperProfile() { 
             CreateMap<ViewProductCategoryModel, ProductsCategory>().ReverseMap();
+            CreateMap<CreateProductCategoryModel, ProductsCategory>().ReverseMap();
+            CreateMap<UpdateProductCategoryModel, ProductsCategory>().ReverseMap();
 
 
 

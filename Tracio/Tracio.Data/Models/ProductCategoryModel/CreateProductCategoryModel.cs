@@ -12,6 +12,7 @@ namespace Tracio.Data.Models.ProductCategoryModel
         public string CategoryName { get; set; } = null!;
 
         public string? Description { get; set; }
+        public string Status  = "Active";
 
     }
 }

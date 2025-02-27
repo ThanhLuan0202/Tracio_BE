@@ -21,28 +21,6 @@
   },
   {
     "ContainingType": "Tracio.API.Controllers.ProductsCategoryController",
-    "Method": "Post",
-    "RelativePath": "api/ProductsCategory",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "value",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Tracio.API.Controllers.ProductsCategoryController",
     "Method": "Get",
     "RelativePath": "api/ProductsCategory/{id}",
     "HttpMethod": "GET",
@@ -69,7 +47,7 @@
   },
   {
     "ContainingType": "Tracio.API.Controllers.ProductsCategoryController",
-    "Method": "Put",
+    "Method": "UpdateProductCategory",
     "RelativePath": "api/ProductsCategory/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -81,15 +59,19 @@
         "IsRequired": true
       },
       {
-        "Name": "value",
-        "Type": "System.String",
+        "Name": "updateProductCategoryModel",
+        "Type": "Tracio.Data.Models.ProductCategoryModel.UpdateProductCategoryModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "Tracio.Data.Models.ProductsCategory",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]
@@ -112,6 +94,32 @@
       {
         "Type": "System.Void",
         "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracio.API.Controllers.ProductsCategoryController",
+    "Method": "CreateProductCategory",
+    "RelativePath": "api/ProductsCategory/create-category",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createProductCategoryModel",
+        "Type": "Tracio.Data.Models.ProductCategoryModel.CreateProductCategoryModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracio.Data.Models.ProductsCategory",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]

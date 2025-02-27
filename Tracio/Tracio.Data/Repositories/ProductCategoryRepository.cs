@@ -14,18 +14,34 @@ namespace Tracio.Data.Repositories
     public class ProductCategoryRepository : Repository<ProductsCategory>,IProductCategoryRepository
     {
         private readonly TracioDbContext _dbContext;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public ProductCategoryRepository(TracioDbContext dbContext) : base(dbContext)
+        public ProductCategoryRepository(TracioDbContext dbContext, IUnitOfWork unitOfWork) : base(dbContext)
         {
             _dbContext = dbContext;
+            _unitOfWork = unitOfWork;
         }
 
-        public Task<ProductsCategory> CreateProductCategory(ProductsCategory newProductCategory)
+        public async Task<ProductsCategory> CreateProductCategory(ProductsCategory newProductCategory)
         {
-            throw new NotImplementedException();
+            if (newProductCategory == null)
+            {
+                throw new ArgumentNullException(nameof(newProductCategory));
+            }
+
+            var existProductCategory = await Entities.FirstOrDefaultAsync(x => x.CategoryName.ToLower().Equals(newProductCategory.CategoryName));
+            if (existProductCategory != null)
+            {
+                throw new Exception($"Product Category {newProductCategory.CategoryName} is exist!");
+            }
+
+            await Entities.AddAsync(newProductCategory);
+            await _dbContext.SaveChangesAsync();
+            return newProductCategory;
+            
         }
 
-        public Task<ProductsCategory> DeleteProductCategory(int productCategoryID)
+        public async Task<ProductsCategory> DeleteProductCategory(int productCategoryID)
         {
             throw new NotImplementedException();
         }
@@ -36,9 +52,31 @@ namespace Tracio.Data.Repositories
             return await query.ToListAsync();
         }
 
-        public Task<ProductsCategory> UpdateProductCategory(ProductsCategory productCategoryUpdate)
+        public async Task<ProductsCategory> UpdateProductCategory(int id, ProductsCategory productCategoryUpdate)
         {
-            throw new NotImplementedException();
+            if (productCategoryUpdate == null)
+            {
+                throw new ArgumentNullException(nameof(productCategoryUpdate));
+            }
+            var existProductCategory = await Entities.FirstOrDefaultAsync(x => x.CategoryId.Equals(id));
+
+            if (existProductCategory == null)
+            {
+                throw new Exception($"Product Category id: {id} not exist");
+            }
+
+            if (productCategoryUpdate.CategoryName.ToLower().Equals(existProductCategory.CategoryName))
+            {
+                throw new Exception($"Product Category name {productCategoryUpdate.CategoryName} is exist!");
+            }
+
+            existProductCategory.CategoryName = productCategoryUpdate.CategoryName;
+            existProductCategory.Description = productCategoryUpdate.Description;
+
+            await _dbContext.SaveChangesAsync();
+
+            return existProductCategory;
+
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Tracio.Data;
 using Tracio.Data.Models;
 using Tracio.Data.Models.ProductCategoryModel;
 using Tracio.Service.Interfaces;
@@ -14,15 +15,19 @@ namespace Tracio.API.Controllers
     {
         public readonly IProductCategoryService _service;
         public readonly IMapper _mapper;
+        public readonly IUnitOfWork _unitOfWork;
 
-        public ProductsCategoryController(IProductCategoryService service, IMapper mapper)
+
+        public ProductsCategoryController(IProductCategoryService service, IMapper mapper, IUnitOfWork unitOfWork)
         {
             _service = service;
             _mapper = mapper;
+            _unitOfWork = unitOfWork;
+
         }
         // GET: api/<CategoryController>
         [HttpGet]
-        public  async Task<ActionResult<IEnumerable<ProductsCategory>>> GetAllProductCategory()
+        public async Task<ActionResult<IEnumerable<ProductsCategory>>> GetAllProductCategory()
         {
             var productCategory = await _service.GetAllCategory();
 
@@ -38,15 +43,60 @@ namespace Tracio.API.Controllers
         }
 
         // POST api/<CategoryController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("create-category")]
+        public async Task<ActionResult<ProductsCategory>> CreateProductCategory([FromBody] CreateProductCategoryModel createProductCategoryModel)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            //_unitOfWork.BeginTransaction();
+
+            try
+            {
+                var productCategory = _mapper.Map<ProductsCategory>(createProductCategoryModel);
+                productCategory = await _service.CreateProductCategory(productCategory);
+                //_unitOfWork.CommitTransaction();
+                return Ok(_mapper.Map<ViewProductCategoryModel>(productCategory));
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+
+            }
         }
 
         // PUT api/<CategoryController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<ActionResult<ProductsCategory>> UpdateProductCategory(int id, [FromBody] UpdateProductCategoryModel updateProductCategoryModel)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            //_unitOfWork.BeginTransaction();
+
+            try
+            {
+                var productCategoryUpdate = _mapper.Map<ProductsCategory>(updateProductCategoryModel);
+                productCategoryUpdate = await _service.UpdateProductCategory(id, productCategoryUpdate);
+                //_unitOfWork.CommitTransaction();
+                return Ok(_mapper.Map<ViewProductCategoryModel>(productCategoryUpdate));
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+
+            }
+
         }
 
         // DELETE api/<CategoryController>/5

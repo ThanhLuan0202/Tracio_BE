@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tracio.Data
 {
-    internal interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork : IDisposable
     {
         void CommitTransaction();
         void RollbackTransaction();

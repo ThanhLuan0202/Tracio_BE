@@ -20,7 +20,7 @@ namespace Tracio.Service.Services
         }
         public Task<ProductsCategory> CreateProductCategory(ProductsCategory newProductCategory)
         {
-            throw new NotImplementedException();
+           return  _repo.CreateProductCategory(newProductCategory);
         }
 
         public Task<ProductsCategory> DeleteProductCategory(int productCategoryID)
@@ -33,9 +33,9 @@ namespace Tracio.Service.Services
             return _repo.GetAllCategory();
         }
 
-        public Task<ProductsCategory> UpdateProductCategory(ProductsCategory productCategoryUpdate)
+        public Task<ProductsCategory> UpdateProductCategory( int id, ProductsCategory productCategoryUpdate)
         {
-            throw new NotImplementedException();
+            return _repo.UpdateProductCategory(id, productCategoryUpdate);
         }
     }
 }

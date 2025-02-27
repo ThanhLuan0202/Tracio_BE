@@ -11,7 +11,7 @@ namespace Tracio.Service.Interfaces
     {
         Task<IEnumerable<ProductsCategory>> GetAllCategory();
         Task<ProductsCategory> CreateProductCategory(ProductsCategory newProductCategory);
-        Task<ProductsCategory> UpdateProductCategory(ProductsCategory productCategoryUpdate);
+        Task<ProductsCategory> UpdateProductCategory(int id, ProductsCategory productCategoryUpdate);
         Task<ProductsCategory> DeleteProductCategory(int productCategoryID);
     }
 }
