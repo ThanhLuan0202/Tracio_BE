@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Tracio.Data.Models;
+namespace Tracio.Data.Entities;
 
 public partial class Review
 {
     public int ReviewId { get; set; }
 
     public int? UserId { get; set; }
+
+    public int? TargetId { get; set; }
 
     public string? TargetType { get; set; }
 

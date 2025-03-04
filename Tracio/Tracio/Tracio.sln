@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracio.API", "Tracio.API.csproj", "{6A585D2C-57BB-402C-95DC-657466E7C899}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracio.API", "Tracio.API.csproj", "{6A585D2C-57BB-402C-95DC-657466E7C899}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracio.Data", "..\Tracio.Data\Tracio.Data.csproj", "{66181E40-655D-4957-8F16-0C075BC1E618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracio.Data", "..\Tracio.Data\Tracio.Data.csproj", "{66181E40-655D-4957-8F16-0C075BC1E618}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracio.Service", "..\Tracio.Service\Tracio.Service.csproj", "{E3EDA604-E789-4B49-81F3-469F77C5C8BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracio.Service", "..\Tracio.Service\Tracio.Service.csproj", "{E3EDA604-E789-4B49-81F3-469F77C5C8BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

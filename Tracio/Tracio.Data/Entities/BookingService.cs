@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Tracio.Data.Models;
+namespace Tracio.Data.Entities;
 
 public partial class BookingService
 {
     public int ServiceBookingId { get; set; }
 
-    public int? BookingId { get; set; }
-
     public int? ServiceId { get; set; }
+
+    public int? BookingId { get; set; }
 
     public int? Quantity { get; set; }
 

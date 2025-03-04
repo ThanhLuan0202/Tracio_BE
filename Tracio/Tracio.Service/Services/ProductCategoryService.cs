@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tracio.Data.Entities;
 using Tracio.Data.Interfaces;
 using Tracio.Data.Models;
 using Tracio.Service.Interfaces;
@@ -25,7 +26,12 @@ namespace Tracio.Service.Services
 
         public Task<ProductsCategory> DeleteProductCategory(int productCategoryID)
         {
-            throw new NotImplementedException();
+            return _repo.DeleteProductCategory(productCategoryID);
+        }
+
+        public Task<ProductsCategory> FindProductCategoryById(int productCategoryID)
+        {
+            return _repo.FindProductCategoryById(productCategoryID);
         }
 
         public Task<IEnumerable<ProductsCategory>> GetAllCategory()

@@ -7,206 +7,227 @@ GO
 USE TracioDB;
 GO
 
+-- Bảng Roles
+CREATE TABLE Roles (
+    roleId INT PRIMARY KEY,
+    roleName NVARCHAR(255),
+    permissions NVARCHAR(MAX)
+);
+
+-- Bảng Users
 CREATE TABLE Users (
-    userId INT IDENTITY(1,1) PRIMARY KEY,
-    fullName NVARCHAR(255) NOT NULL,
-    email NVARCHAR(255) UNIQUE NOT NULL,
-    password NVARCHAR(255) NOT NULL,
-    phoneNumber NVARCHAR(20) UNIQUE NOT NULL,
+    userId INT PRIMARY KEY,
+    fullName NVARCHAR(255),
+    email NVARCHAR(255) UNIQUE,
+    password NVARCHAR(255),
+    phoneNumber NVARCHAR(20),
     roleId INT,
-    cyclingLevel NVARCHAR(50),
-    preferredRouteTypes NVARCHAR(MAX),
-    createdTime DATETIME DEFAULT GETDATE(),
-    updatedTime DATETIME DEFAULT GETDATE(),
+    address NVARCHAR(MAX),
+    createdTime DATETIME,
+    updatedTime DATETIME,
     MemberShipId INT,
     FOREIGN KEY (roleId) REFERENCES Roles(roleId)
 );
-GO
 
-CREATE TABLE Roles (
-    roleId INT IDENTITY(1,1) PRIMARY KEY,
-    roleName NVARCHAR(100) NOT NULL,
-    permissions NVARCHAR(MAX)
+-- Bảng ServiceCategories
+CREATE TABLE ServiceCategories (
+    categoryId INT PRIMARY KEY,
+    categoryName NVARCHAR(255),
+    description NVARCHAR(MAX)
 );
-GO
 
+-- Bảng Services
 CREATE TABLE Services (
-    serviceId INT IDENTITY(1,1) PRIMARY KEY,
-    serviceName NVARCHAR(255) NOT NULL,
+    serviceId INT PRIMARY KEY,
+    serviceName NVARCHAR(255),
     description NVARCHAR(MAX),
     price DECIMAL(10,2),
+    availability INT,
     estimatedTime FLOAT,
     rating FLOAT,
     categoryId INT,
     FOREIGN KEY (categoryId) REFERENCES ServiceCategories(categoryId)
 );
-GO
 
-CREATE TABLE ServiceCategories (
-    categoryId INT IDENTITY(1,1) PRIMARY KEY,
-    categoryName NVARCHAR(255) NOT NULL,
+-- Bảng BookingServices
+CREATE TABLE BookingServices (
+    serviceBookingId INT PRIMARY KEY,
+    serviceId INT,
+    bookingId INT,
+    Quantity INT,
+    subtotal DECIMAL(10,2),
+    notes NVARCHAR(MAX),
+    FOREIGN KEY (serviceId) REFERENCES Services(serviceId),
+    FOREIGN KEY (bookingId) REFERENCES Bookings(productId)   
+	
+);
+
+-- Bảng ProductsCategories
+CREATE TABLE ProductsCategories (
+    categoryId INT PRIMARY KEY,
+    categoryName NVARCHAR(255),
     description NVARCHAR(MAX)
 );
-GO
 
+-- Bảng Products
+CREATE TABLE Products (
+    productId INT PRIMARY KEY,
+    productName NVARCHAR(255),
+    description NVARCHAR(MAX),
+    stockQuantity INT,
+    categoryId INT,
+    condition NVARCHAR(MAX),
+    createdTime DATETIME,
+    image NVARCHAR(MAX),
+    FOREIGN KEY (categoryId) REFERENCES ProductsCategories(categoryId)
+);
+
+-- Bảng Bookings
 CREATE TABLE Bookings (
-    bookingId INT IDENTITY(1,1) PRIMARY KEY,
+    bookingId INT PRIMARY KEY,
     userId INT,
-    bookingDate DATETIME DEFAULT GETDATE(),
+    bookingDate DATETIME,
     status NVARCHAR(50),
     notes NVARCHAR(MAX),
     totalAmount DECIMAL(10,2),
     FOREIGN KEY (userId) REFERENCES Users(userId)
 );
-GO
 
-CREATE TABLE BookingServices (
-    serviceBookingId INT IDENTITY(1,1) PRIMARY KEY,
-    bookingId INT,
-    serviceId INT,
-    quantity INT,
-    subtotal DECIMAL(10,2),
-    notes NVARCHAR(MAX),
-    FOREIGN KEY (bookingId) REFERENCES Bookings(bookingId),
-    FOREIGN KEY (serviceId) REFERENCES Services(serviceId)
-);
-GO
-
-CREATE TABLE Products (
-    productId INT IDENTITY(1,1) PRIMARY KEY,
-    productName NVARCHAR(255) NOT NULL,
-    description NVARCHAR(MAX),
-    price DECIMAL(10,2),
-    stockQuantity INT,
-    brand NVARCHAR(255),
-    rating FLOAT,
-    createdTime DATETIME DEFAULT GETDATE(),
-    image NVARCHAR(255)
-);
-GO
-
+-- Bảng BookingProducts
 CREATE TABLE BookingProducts (
-    productBookingId INT IDENTITY(1,1) PRIMARY KEY,
-    bookingId INT,
+    productBookingId INT PRIMARY KEY,
     productId INT,
-    quantity INT,
+    bookingId INT,
+    Quantity INT,
     subtotal DECIMAL(10,2),
     notes NVARCHAR(MAX),
-    FOREIGN KEY (bookingId) REFERENCES Bookings(bookingId),
-    FOREIGN KEY (productId) REFERENCES Products(productId)
+    FOREIGN KEY (productId) REFERENCES Products(productId),
+    FOREIGN KEY (bookingId) REFERENCES Bookings(bookingId)
 );
-GO
 
-CREATE TABLE ProductsCategories (
-    categoryId INT IDENTITY(1,1) PRIMARY KEY,
-    categoryName NVARCHAR(255) NOT NULL,
-    description NVARCHAR(MAX)
-);
-GO
-
+-- Bảng Reviews
 CREATE TABLE Reviews (
-    reviewId INT IDENTITY(1,1) PRIMARY KEY,
+    reviewId INT PRIMARY KEY,
     userId INT,
-    targetType NVARCHAR(50),
-    rating INT CHECK (rating BETWEEN 1 AND 5),
+    targetId INT,
+    targetType NVARCHAR(255),
+    rating INT,
     content NVARCHAR(MAX),
-    createdTime DATETIME DEFAULT GETDATE(),
+    createdTime DATETIME,
     FOREIGN KEY (userId) REFERENCES Users(userId)
 );
-GO
 
+-- Bảng Blogs
+CREATE TABLE Blogs (
+    blogId INT PRIMARY KEY,
+    authorId INT,
+	categoryId INT,
+    title NVARCHAR(255),
+    content NVARCHAR(MAX),
+    tagId INT,
+    likeCount INT,
+    createdTime DATETIME,
+    updatedTime DATETIME,
+    FOREIGN KEY (authorId) REFERENCES Users(userId),
+    FOREIGN KEY (categoryId) REFERENCES BlogCategories(categoryId),
+	FOREIGN KEY (tagId) REFERENCES BlogTags(lagId)
+
+); 
+
+-- Bảng BlogTags
+CREATE TABLE BlogTags (
+    lagId INT PRIMARY KEY,
+    tagName NVARCHAR(255)
+);
+
+-- Bảng BlogCategories
+CREATE TABLE BlogCategories (
+    categoryId INT PRIMARY KEY,
+    categoryName NVARCHAR(255),
+    description NVARCHAR(MAX)
+);
+
+-- Bảng Group
 CREATE TABLE [Group] (
-    groupId INT IDENTITY(1,1) PRIMARY KEY,
-    groupName NVARCHAR(255) NOT NULL,
+    groupId INT PRIMARY KEY,
+    groupName NVARCHAR(255),
+    description NVARCHAR(MAX),
     creatorId INT,
     memberCount INT,
-    createdTime DATETIME DEFAULT GETDATE(),
-    updatedTime DATETIME DEFAULT GETDATE(),
+    status NVARCHAR(50),
+    createdTime DATETIME,
+    updatedTime DATETIME,
     FOREIGN KEY (creatorId) REFERENCES Users(userId)
 );
-GO
 
+-- Bảng GroupMember
 CREATE TABLE GroupMember (
-    memberShipId INT IDENTITY(1,1) PRIMARY KEY,
+    MemberShipId INT PRIMARY KEY,
     groupId INT,
     userId INT,
     status NVARCHAR(50),
-    joinedTime DATETIME DEFAULT GETDATE(),
+    joinedTime DATETIME,
     FOREIGN KEY (groupId) REFERENCES [Group](groupId),
     FOREIGN KEY (userId) REFERENCES Users(userId)
 );
-GO
 
-CREATE TABLE Rides (
-    rideId INT IDENTITY(1,1) PRIMARY KEY,
-    routeId INT,
+-- Bảng ChatOfGroup
+CREATE TABLE ChatOfGroup (
+    groupChatId INT PRIMARY KEY,
+    content NVARCHAR(MAX),
+    userId INT,
+    groupId INT,
+    createdTime DATETIME,
+    FOREIGN KEY (userId) REFERENCES Users(userId),
+    FOREIGN KEY (groupId) REFERENCES [Group](groupId)
+);
+
+-- Bảng Routes
+CREATE TABLE Routes (
+    routeId INT PRIMARY KEY,
     creatorId INT,
-    startTime DATETIME,
-    endTime DATETIME,
-    difficultyLevel NVARCHAR(50),
-    FOREIGN KEY (routeId) REFERENCES RouteReferences(referenceId),
+    startLocation NVARCHAR(MAX),
+    endLocation NVARCHAR(MAX),
+    distance FLOAT,
+    estimatedTime FLOAT,
+    routeDescription NVARCHAR(MAX),
+    sharedWithPublic BIT,
+    createdTime DATETIME,
+    routePath NVARCHAR(MAX),
+    segmentPolyline NVARCHAR(MAX),
+    StreetList NVARCHAR(MAX),
     FOREIGN KEY (creatorId) REFERENCES Users(userId)
 );
-GO
 
-CREATE TABLE Blogs (
-    blogId INT IDENTITY(1,1) PRIMARY KEY,
-    authorId INT,
-    title NVARCHAR(255) NOT NULL,
-    content NVARCHAR(MAX),
-    tagId INT,
-    viewCount INT DEFAULT 0,
-    likeCount INT DEFAULT 0,
-    createdTime DATETIME DEFAULT GETDATE(),
-    updatedTime DATETIME DEFAULT GETDATE(),
-    FOREIGN KEY (authorId) REFERENCES Users(userId)
-);
-GO
-
-CREATE TABLE BlogTags (
-    tagId INT IDENTITY(1,1) PRIMARY KEY,
-    tagName NVARCHAR(255) NOT NULL
-);
-GO
-
-CREATE TABLE BlogCategories (
-    categoryId INT IDENTITY(1,1) PRIMARY KEY,
-    categoryName NVARCHAR(255) NOT NULL,
-    description NVARCHAR(MAX)
-);
-GO
-
-CREATE TABLE RouteReferences (
-    referenceId INT IDENTITY(1,1) PRIMARY KEY,
-    blogId INT,
-    routeId INT,
-    latitude FLOAT,
-    longitude FLOAT,
+-- Bảng RouteCheckpoints
+CREATE TABLE RouteCheckpoints (
+    pointId INT PRIMARY KEY,
+    segmentId INT,
+    pointNumber INT,
+    pointName NVARCHAR(255),
     sequenceNumber INT,
     description NVARCHAR(MAX),
-    FOREIGN KEY (blogId) REFERENCES Blogs(blogId),
-    FOREIGN KEY (routeId) REFERENCES Rides(rideId)
+    lng FLOAT,
+    FOREIGN KEY (segmentId) REFERENCES Routes(routeId)
 );
-GO
 
+-- Bảng RouteReferences
+CREATE TABLE RouteReferences (
+    referenceId INT PRIMARY KEY,
+    blogId INT,
+    routeId INT,
+    description NVARCHAR(MAX),
+    FOREIGN KEY (blogId) REFERENCES Blogs(blogId),
+    FOREIGN KEY (routeId) REFERENCES Routes(routeId)
+);
+
+-- Bảng GroupRoutes
 CREATE TABLE GroupRoutes (
-    groupRouteId INT IDENTITY(1,1) PRIMARY KEY,
+    groupRouteId INT PRIMARY KEY,
     groupId INT,
     routeId INT,
     content NVARCHAR(MAX),
-    sharedTime DATETIME DEFAULT GETDATE(),
+    SharedTime DATETIME,
     FOREIGN KEY (groupId) REFERENCES [Group](groupId),
-    FOREIGN KEY (routeId) REFERENCES Rides(rideId)
+    FOREIGN KEY (routeId) REFERENCES Routes(routeId)
 );
-GO
-
-CREATE TABLE ChatOfGroup (
-    groupChatId INT IDENTITY(1,1) PRIMARY KEY,
-    groupId INT,
-    userId INT,
-    content NVARCHAR(MAX),
-    createdTime DATETIME DEFAULT GETDATE(),
-    FOREIGN KEY (groupId) REFERENCES [Group](groupId),
-    FOREIGN KEY (userId) REFERENCES Users(userId)
-);
-GO

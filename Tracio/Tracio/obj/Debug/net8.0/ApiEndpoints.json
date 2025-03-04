@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Tracio.Data.Models.ProductsCategory, Tracio.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Tracio.Data.Entities.ProductsCategory, Tracio.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -21,7 +21,7 @@
   },
   {
     "ContainingType": "Tracio.API.Controllers.ProductsCategoryController",
-    "Method": "Get",
+    "Method": "GetProductCategoryById",
     "RelativePath": "api/ProductsCategory/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -35,7 +35,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "Tracio.Data.Entities.ProductsCategory",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -66,7 +66,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Tracio.Data.Models.ProductsCategory",
+        "Type": "Tracio.Data.Entities.ProductsCategory",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -78,7 +78,7 @@
   },
   {
     "ContainingType": "Tracio.API.Controllers.ProductsCategoryController",
-    "Method": "Delete",
+    "Method": "DeleteProductCategory",
     "RelativePath": "api/ProductsCategory/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -92,8 +92,12 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "Tracio.Data.Entities.ProductsCategory",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]
@@ -114,7 +118,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Tracio.Data.Models.ProductsCategory",
+        "Type": "Tracio.Data.Entities.ProductsCategory",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Tracio.Data.Models;
+namespace Tracio.Data.Entities;
 
 public partial class Role
 {
     public int RoleId { get; set; }
 
-    public string RoleName { get; set; } = null!;
+    public string? RoleName { get; set; }
 
     public string? Permissions { get; set; }
 

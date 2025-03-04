@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Tracio.Data.Data;
+using Tracio.Data.Entities;
 using Tracio.Data.Interfaces;
 using Tracio.Data.Models;
 using Tracio.Data.Models.ProductCategoryModel;
@@ -43,7 +44,27 @@ namespace Tracio.Data.Repositories
 
         public async Task<ProductsCategory> DeleteProductCategory(int productCategoryID)
         {
-            throw new NotImplementedException();
+            var existProductCategory = await Entities.FirstOrDefaultAsync(x => x.CategoryId.Equals(productCategoryID));
+            if (existProductCategory == null)
+            {
+                throw new Exception($"Product Category {nameof(ProductsCategory)} not found");
+            }
+             existProductCategory.Status = "Inactive";
+            await _dbContext.SaveChangesAsync();
+            return existProductCategory;
+
+
+        }
+
+        public async Task<ProductsCategory> FindProductCategoryById(int productCategoryID)
+        {
+            var existProductCategory = await Entities.FirstOrDefaultAsync(x => x.CategoryId.Equals(productCategoryID) && x.Status.ToLower().Equals("Active"));
+            if (existProductCategory == null)
+            {
+                throw new Exception($"Product Category {nameof(ProductsCategory)} not found");
+            }
+
+            return existProductCategory;
         }
 
         public async Task<IEnumerable<ProductsCategory>> GetAllCategory()

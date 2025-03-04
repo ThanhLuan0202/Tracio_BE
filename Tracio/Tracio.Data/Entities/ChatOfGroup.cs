@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Tracio.Data.Models;
+namespace Tracio.Data.Entities;
 
 public partial class ChatOfGroup
 {
     public int GroupChatId { get; set; }
 
-    public int? GroupId { get; set; }
+    public string? Content { get; set; }
 
     public int? UserId { get; set; }
 
-    public string? Content { get; set; }
+    public int? GroupId { get; set; }
 
     public DateTime? CreatedTime { get; set; }
 

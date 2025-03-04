@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Tracio.Data;
+using Tracio.Data.Entities;
 using Tracio.Data.Models;
 using Tracio.Data.Models.ProductCategoryModel;
 using Tracio.Service.Interfaces;
@@ -37,9 +40,14 @@ namespace Tracio.API.Controllers
 
         // GET api/<CategoryController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<ProductsCategory>> GetProductCategoryById(int id)
         {
-            return "value";
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var productCategory = await _service.FindProductCategoryById(id);
+            return Ok(_mapper.Map<ViewProductCategoryModel>(productCategory));
         }
 
         // POST api/<CategoryController>
@@ -101,8 +109,26 @@ namespace Tracio.API.Controllers
 
         // DELETE api/<CategoryController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult<ProductsCategory>> DeleteProductCategory(int id)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+               var productCategory = await _service.DeleteProductCategory(id);
+
+                return Ok(_mapper.Map<ViewProductCategoryModel>(productCategory));
+            }catch(KeyNotFoundException ex)
+            {
+                return NotFound(new {message = ex.Message});
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new {message = ex.Message});
+            }
+
         }
     }
 }

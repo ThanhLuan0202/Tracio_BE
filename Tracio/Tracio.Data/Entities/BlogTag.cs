@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Tracio.Data.Models;
+namespace Tracio.Data.Entities;
 
 public partial class BlogTag
 {
-    public int TagId { get; set; }
+    public int LagId { get; set; }
 
-    public string TagName { get; set; } = null!;
+    public string? TagName { get; set; }
+
+    public virtual ICollection<Blog> Blogs { get; set; } = new List<Blog>();
 }
