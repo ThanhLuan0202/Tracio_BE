@@ -13,7 +13,9 @@ namespace Tracio.Data
             service.AddTransient(typeof(IUnitOfWork), typeof(UnitOfWork));
             service.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             service.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
-            
+            service.AddTransient<IAuthenRepository, AuthenRepository>();
+
+
             return service;
         }
 

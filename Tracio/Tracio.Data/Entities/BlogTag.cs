@@ -5,7 +5,7 @@ namespace Tracio.Data.Entities;
 
 public partial class BlogTag
 {
-    public int LagId { get; set; }
+    public int TagId { get; set; }
 
     public string? TagName { get; set; }
 

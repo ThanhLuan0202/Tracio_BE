@@ -3,17 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E3EDA604-E789-4B49-81F3-469F77C5C8BF}|..\\Tracio.Service\\Tracio.Service.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.service\\interfaces\\iservicecategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A585D2C-57BB-402C-95DC-657466E7C899}|Tracio.API.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio\\controllers\\productscategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A585D2C-57BB-402C-95DC-657466E7C899}|Tracio.API.csproj|solutionrelative:controllers\\productscategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\repositories\\servicecategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\models\\servicecategorymodel\\createservicecategorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3EDA604-E789-4B49-81F3-469F77C5C8BF}|..\\Tracio.Service\\Tracio.Service.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.service\\services\\productcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EDA604-E789-4B49-81F3-469F77C5C8BF}|..\\Tracio.Service\\Tracio.Service.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.service\\services\\authenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EDA604-E789-4B49-81F3-469F77C5C8BF}|..\\Tracio.Service\\Tracio.Service.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.service\\interfaces\\iservicecategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EDA604-E789-4B49-81F3-469F77C5C8BF}|..\\Tracio.Service\\Tracio.Service.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.service\\interfaces\\iproductcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EDA604-E789-4B49-81F3-469F77C5C8BF}|..\\Tracio.Service\\Tracio.Service.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.service\\interfaces\\iauthenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\models\\loginmodel\\registerloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\models\\loginmodel\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -22,110 +36,19 @@
       "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\interfaces\\iservicecategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3EDA604-E789-4B49-81F3-469F77C5C8BF}|..\\Tracio.Service\\Tracio.Service.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.service\\services\\productcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3EDA604-E789-4B49-81F3-469F77C5C8BF}|..\\Tracio.Service\\Tracio.Service.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.service\\interfaces\\iproductcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\repositories\\productcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\interfaces\\iproductcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\interfaces\\iauthenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\repositories\\authenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\data\\traciodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\models\\servicecategorymodel\\updateservicecategorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\models\\servicecategorymodel\\viewservicecategorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\models\\productcategorymodel\\viewproductcategorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3EDA604-E789-4B49-81F3-469F77C5C8BF}|..\\Tracio.Service\\Tracio.Service.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.service\\tracio.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\models\\productcategorymodel\\createproductcategorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\models\\productcategorymodel\\updateproductcategorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A585D2C-57BB-402C-95DC-657466E7C899}|Tracio.API.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A585D2C-57BB-402C-95DC-657466E7C899}|Tracio.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3EDA604-E789-4B49-81F3-469F77C5C8BF}|..\\Tracio.Service\\Tracio.Service.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\Data\\TracioDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A585D2C-57BB-402C-95DC-657466E7C899}|Tracio.API.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A585D2C-57BB-402C-95DC-657466E7C899}|Tracio.API.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A585D2C-57BB-402C-95DC-657466E7C899}|Tracio.API.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A585D2C-57BB-402C-95DC-657466E7C899}|Tracio.API.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A585D2C-57BB-402C-95DC-657466E7C899}|Tracio.API.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6A585D2C-57BB-402C-95DC-657466E7C899}|Tracio.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\UnitOfWork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Service\\DependencyInjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\Models\\Role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Service\\Tracio.Service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\DependencyInjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\IUnitOfWork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\migrations\\20250225150922_addstatuscategorytl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\migrations\\20250225150840_addstatuscategorykl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\migrations\\20250225150746_addstatuscategoryk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\migrations\\20250225150456_addstatuscategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66181E40-655D-4957-8F16-0C075BC1E618}|..\\Tracio.Data\\Tracio.Data.csproj|c:\\users\\luann\\onedrive\\m\u00E1y t\u00EDnh\\tracio_be\\tracio_be\\tracio\\tracio.data\\repositories\\productcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -135,472 +58,215 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Mapping\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Mapping\\AutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Mapping\\AutoMapperProfile.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Mapping\\AutoMapperProfile.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvw8AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T19:11:49.203Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateServiceCategoryModel.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\ServiceCategoryModel\\CreateServiceCategoryModel.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Models\\ServiceCategoryModel\\CreateServiceCategoryModel.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\ServiceCategoryModel\\CreateServiceCategoryModel.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Models\\ServiceCategoryModel\\CreateServiceCategoryModel.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T09:22:38.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceCategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Repositories\\ServiceCategoryRepository.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Repositories\\ServiceCategoryRepository.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Repositories\\ServiceCategoryRepository.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Repositories\\ServiceCategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T09:19:32.71Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductsCategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio\\Controllers\\ProductsCategoryController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductsCategoryController.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio\\Controllers\\ProductsCategoryController.cs",
-              "RelativeToolTip": "Controllers\\ProductsCategoryController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T13:59:56.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IServiceCategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Interfaces\\IServiceCategoryService.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Service\\Interfaces\\IServiceCategoryService.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Interfaces\\IServiceCategoryService.cs",
-              "RelativeToolTip": "..\\Tracio.Service\\Interfaces\\IServiceCategoryService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAiwAwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T08:45:44.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IServiceCategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Interfaces\\IServiceCategoryRepository.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Interfaces\\IServiceCategoryRepository.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Interfaces\\IServiceCategoryRepository.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Interfaces\\IServiceCategoryRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T08:44:03.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "ProductCategoryService.cs",
               "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Services\\ProductCategoryService.cs",
               "RelativeDocumentMoniker": "..\\Tracio.Service\\Services\\ProductCategoryService.cs",
               "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Services\\ProductCategoryService.cs",
               "RelativeToolTip": "..\\Tracio.Service\\Services\\ProductCategoryService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBoAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T15:13:18.219Z"
+              "WhenOpened": "2025-03-04T20:33:25.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "AuthenService.cs",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Services\\AuthenService.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Service\\Services\\AuthenService.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Services\\AuthenService.cs",
+              "RelativeToolTip": "..\\Tracio.Service\\Services\\AuthenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T20:33:23.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IServiceCategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Interfaces\\IServiceCategoryService.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Service\\Interfaces\\IServiceCategoryService.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Interfaces\\IServiceCategoryService.cs",
+              "RelativeToolTip": "..\\Tracio.Service\\Interfaces\\IServiceCategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T20:33:20.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "IProductCategoryService.cs",
               "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Interfaces\\IProductCategoryService.cs",
               "RelativeDocumentMoniker": "..\\Tracio.Service\\Interfaces\\IProductCategoryService.cs",
               "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Interfaces\\IProductCategoryService.cs",
               "RelativeToolTip": "..\\Tracio.Service\\Interfaces\\IProductCategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T15:12:41.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProductCategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Repositories\\ProductCategoryRepository.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Repositories\\ProductCategoryRepository.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Repositories\\ProductCategoryRepository.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Repositories\\ProductCategoryRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAvwCwAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T14:32:44.672Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Blog.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Entities\\Blog.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Entities\\Blog.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Entities\\Blog.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Entities\\Blog.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA9wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T17:30:12.2Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IProductCategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Interfaces\\IProductCategoryRepository.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Interfaces\\IProductCategoryRepository.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Interfaces\\IProductCategoryRepository.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Interfaces\\IProductCategoryRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T14:23:58.609Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TracioDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Data\\TracioDbContext.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Data\\TracioDbContext.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Data\\TracioDbContext.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Data\\TracioDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T17:29:27.087Z"
+              "WhenOpened": "2025-03-04T20:33:18.66Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\IUnitOfWork.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAgAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "IAuthenService.cs",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Interfaces\\IAuthenService.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Service\\Interfaces\\IAuthenService.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Interfaces\\IAuthenService.cs",
+              "RelativeToolTip": "..\\Tracio.Service\\Interfaces\\IAuthenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T14:00:17.543Z"
+              "WhenOpened": "2025-03-04T20:33:15.884Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UpdateServiceCategoryModel.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\ServiceCategoryModel\\UpdateServiceCategoryModel.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Models\\ServiceCategoryModel\\UpdateServiceCategoryModel.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\ServiceCategoryModel\\UpdateServiceCategoryModel.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Models\\ServiceCategoryModel\\UpdateServiceCategoryModel.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAUwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T09:30:07.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ViewServiceCategoryModel.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\ServiceCategoryModel\\ViewServiceCategoryModel.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Models\\ServiceCategoryModel\\ViewServiceCategoryModel.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\ServiceCategoryModel\\ViewServiceCategoryModel.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Models\\ServiceCategoryModel\\ViewServiceCategoryModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T09:30:23.692Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Repository.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Repository.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Repository.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Repository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvxYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T14:42:50.852Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ViewProductCategoryModel.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\ProductCategoryModel\\ViewProductCategoryModel.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Models\\ProductCategoryModel\\ViewProductCategoryModel.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\ProductCategoryModel\\ViewProductCategoryModel.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Models\\ProductCategoryModel\\ViewProductCategoryModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAswBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T15:20:14.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Tracio.Service.csproj",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Tracio.Service.csproj",
-              "RelativeDocumentMoniker": "..\\Tracio.Service\\Tracio.Service.csproj",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Tracio.Service.csproj",
-              "RelativeToolTip": "..\\Tracio.Service\\Tracio.Service.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-25T14:00:19.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\UnitOfWork.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T14:00:19.979Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UpdateProductCategoryModel.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\ProductCategoryModel\\UpdateProductCategoryModel.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Models\\ProductCategoryModel\\UpdateProductCategoryModel.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\ProductCategoryModel\\UpdateProductCategoryModel.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Models\\ProductCategoryModel\\UpdateProductCategoryModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T14:31:08.626Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CreateProductCategoryModel.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\ProductCategoryModel\\CreateProductCategoryModel.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Models\\ProductCategoryModel\\CreateProductCategoryModel.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\ProductCategoryModel\\CreateProductCategoryModel.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Models\\ProductCategoryModel\\CreateProductCategoryModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAswA4AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T14:29:57.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAkwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:23:22.38Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Service\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\DependencyInjection.cs",
-              "RelativeToolTip": "..\\Tracio.Service\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T15:28:11.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 6,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "..\\Tracio.Data\\DependencyInjection.cs",
               "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\DependencyInjection.cs",
               "RelativeToolTip": "..\\Tracio.Data\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T15:27:20.721Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "20250225150922_addStatusCategorytl.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Migrations\\20250225150922_addStatusCategorytl.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Migrations\\20250225150922_addStatusCategorytl.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Migrations\\20250225150922_addStatusCategorytl.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Migrations\\20250225150922_addStatusCategorytl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T15:09:22.637Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "20250225150840_addStatusCategorykl.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Migrations\\20250225150840_addStatusCategorykl.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Migrations\\20250225150840_addStatusCategorykl.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Migrations\\20250225150840_addStatusCategorykl.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Migrations\\20250225150840_addStatusCategorykl.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T15:08:40.713Z"
+              "WhenOpened": "2025-03-04T20:33:11.459Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "20250225150746_addStatusCategoryk.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Migrations\\20250225150746_addStatusCategoryk.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Migrations\\20250225150746_addStatusCategoryk.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Migrations\\20250225150746_addStatusCategoryk.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Migrations\\20250225150746_addStatusCategoryk.cs",
+              "DocumentIndex": 7,
+              "Title": "RegisterLoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\LoginModel\\RegisterLoginModel.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Data\\Models\\LoginModel\\RegisterLoginModel.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\LoginModel\\RegisterLoginModel.cs",
+              "RelativeToolTip": "..\\Tracio.Data\\Models\\LoginModel\\RegisterLoginModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T15:07:46.617Z"
+              "WhenOpened": "2025-03-04T20:33:08.62Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "20250225150456_addStatusCategory.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Migrations\\20250225150456_addStatusCategory.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\Migrations\\20250225150456_addStatusCategory.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Migrations\\20250225150456_addStatusCategory.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\Migrations\\20250225150456_addStatusCategory.cs",
+              "DocumentIndex": 0,
+              "Title": "ServiceCategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Repositories\\ServiceCategoryRepository.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Data\\Repositories\\ServiceCategoryRepository.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Repositories\\ServiceCategoryRepository.cs",
+              "RelativeToolTip": "..\\Tracio.Data\\Repositories\\ServiceCategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T20:16:02.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\LoginModel\\LoginModel.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Data\\Models\\LoginModel\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Models\\LoginModel\\LoginModel.cs",
+              "RelativeToolTip": "..\\Tracio.Data\\Models\\LoginModel\\LoginModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T15:04:56.354Z"
+              "WhenOpened": "2025-03-04T20:33:07.136Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\IRepository.cs",
-              "RelativeDocumentMoniker": "..\\Tracio.Data\\IRepository.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\IRepository.cs",
-              "RelativeToolTip": "..\\Tracio.Data\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T14:43:25.187Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio\\WeatherForecast.cs",
-              "RelativeToolTip": "WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T18:52:56.349Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-24T17:47:06.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\UnitOfWork.cs",
-              "ToolTip": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:57:12.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Service\\DependencyInjection.cs",
-              "ToolTip": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Service\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:25:24.009Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 14,
               "Title": "TracioDbContext.cs",
-              "DocumentMoniker": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\Data\\TracioDbContext.cs",
-              "ToolTip": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\Data\\TracioDbContext.cs",
-              "ViewState": "AgIAACEBAAAAAAAAAAAYwHIBAAAoAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Data\\TracioDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Data\\Data\\TracioDbContext.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Data\\TracioDbContext.cs",
+              "RelativeToolTip": "..\\Tracio.Data\\Data\\TracioDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T18:37:36.047Z"
+              "WhenOpened": "2025-03-04T20:31:38.503Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\Models\\User.cs",
-              "ToolTip": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\Models\\User.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "ProductCategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Repositories\\ProductCategoryRepository.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Data\\Repositories\\ProductCategoryRepository.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Repositories\\ProductCategoryRepository.cs",
+              "RelativeToolTip": "..\\Tracio.Data\\Repositories\\ProductCategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T18:57:56.085Z"
+              "WhenOpened": "2025-03-04T20:27:18.416Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Role.cs",
-              "DocumentMoniker": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\Models\\Role.cs",
-              "ToolTip": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\Models\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Mapping\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Data\\Mapping\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Mapping\\AutoMapperProfile.cs",
+              "RelativeToolTip": "..\\Tracio.Data\\Mapping\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T18:58:25.293Z"
+              "WhenOpened": "2025-03-04T20:27:07.776Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Tracio.Service.csproj",
-              "DocumentMoniker": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Service\\Tracio.Service.csproj",
-              "ToolTip": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Service\\Tracio.Service.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-24T18:27:29.03Z"
+              "DocumentIndex": 10,
+              "Title": "IServiceCategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Interfaces\\IServiceCategoryRepository.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Data\\Interfaces\\IServiceCategoryRepository.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Interfaces\\IServiceCategoryRepository.cs",
+              "RelativeToolTip": "..\\Tracio.Data\\Interfaces\\IServiceCategoryRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T20:27:06.844Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABJAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "IProductCategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Interfaces\\IProductCategoryRepository.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Data\\Interfaces\\IProductCategoryRepository.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Interfaces\\IProductCategoryRepository.cs",
+              "RelativeToolTip": "..\\Tracio.Data\\Interfaces\\IProductCategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:23:43.425Z"
+              "WhenOpened": "2025-03-04T20:26:54.859Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\DependencyInjection.cs",
-              "ToolTip": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "IAuthenRepository.cs",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Interfaces\\IAuthenRepository.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Data\\Interfaces\\IAuthenRepository.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Interfaces\\IAuthenRepository.cs",
+              "RelativeToolTip": "..\\Tracio.Data\\Interfaces\\IAuthenRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:24:50.375Z"
+              "WhenOpened": "2025-03-04T20:26:44.48Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\IUnitOfWork.cs",
-              "ToolTip": "D:\\luan\\hoc\\swd392\\Tracio\\Tracio.Data\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvxAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "AuthenRepository.cs",
+              "DocumentMoniker": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Repositories\\AuthenRepository.cs",
+              "RelativeDocumentMoniker": "..\\Tracio.Data\\Repositories\\AuthenRepository.cs",
+              "ToolTip": "C:\\Users\\luann\\OneDrive\\M\u00E1y t\u00EDnh\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Repositories\\AuthenRepository.cs",
+              "RelativeToolTip": "..\\Tracio.Data\\Repositories\\AuthenRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswBIAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T16:56:27.562Z"
+              "WhenOpened": "2025-03-04T19:57:33.303Z",
+              "EditorCaption": ""
             }
           ]
         }

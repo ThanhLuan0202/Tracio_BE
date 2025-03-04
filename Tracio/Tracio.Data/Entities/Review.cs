@@ -19,5 +19,7 @@ public partial class Review
 
     public DateTime? CreatedTime { get; set; }
 
+    public string? Status { get; set; }
+
     public virtual User? User { get; set; }
 }

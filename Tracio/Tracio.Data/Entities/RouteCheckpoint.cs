@@ -19,5 +19,7 @@ public partial class RouteCheckpoint
 
     public double? Lng { get; set; }
 
+    public string? Status { get; set; }
+
     public virtual Route? Segment { get; set; }
 }

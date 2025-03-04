@@ -58,17 +58,15 @@ public partial class TracioDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=LUAN_NE;Database=TracioDB;User Id=sa;Password=12345;TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Server=.;Database=TracioDb;Trusted_Connection=True;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Blog>(entity =>
         {
-            entity.HasKey(e => e.BlogId).HasName("PK__Blogs__FA0AA72D3A123613");
+            entity.HasKey(e => e.BlogId).HasName("PK__Blogs__FA0AA72DECC9C036");
 
-            entity.Property(e => e.BlogId)
-                .ValueGeneratedNever()
-                .HasColumnName("blogId");
+            entity.Property(e => e.BlogId).HasColumnName("blogId");
             entity.Property(e => e.AuthorId).HasColumnName("authorId");
             entity.Property(e => e.CategoryId).HasColumnName("categoryId");
             entity.Property(e => e.Content).HasColumnName("content");
@@ -76,9 +74,6 @@ public partial class TracioDbContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("createdTime");
             entity.Property(e => e.LikeCount).HasColumnName("likeCount");
-            entity.Property(e => e.Status)
-                .HasMaxLength(50)
-                .HasColumnName("status");
             entity.Property(e => e.TagId).HasColumnName("tagId");
             entity.Property(e => e.Title)
                 .HasMaxLength(255)
@@ -89,24 +84,22 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.Author).WithMany(p => p.Blogs)
                 .HasForeignKey(d => d.AuthorId)
-                .HasConstraintName("FK__Blogs__authorId__6E01572D");
+                .HasConstraintName("FK__Blogs__authorId__5BE2A6F2");
 
             entity.HasOne(d => d.Category).WithMany(p => p.Blogs)
                 .HasForeignKey(d => d.CategoryId)
-                .HasConstraintName("FK__Blogs__categoryI__6EF57B66");
+                .HasConstraintName("FK__Blogs__categoryI__5CD6CB2B");
 
             entity.HasOne(d => d.Tag).WithMany(p => p.Blogs)
                 .HasForeignKey(d => d.TagId)
-                .HasConstraintName("FK__Blogs__tagId__6FE99F9F");
+                .HasConstraintName("FK__Blogs__tagId__5DCAEF64");
         });
 
         modelBuilder.Entity<BlogCategory>(entity =>
         {
-            entity.HasKey(e => e.CategoryId).HasName("PK__BlogCate__23CAF1D8B8F7F730");
+            entity.HasKey(e => e.CategoryId).HasName("PK__BlogCate__23CAF1D810C9BAEB");
 
-            entity.Property(e => e.CategoryId)
-                .ValueGeneratedNever()
-                .HasColumnName("categoryId");
+            entity.Property(e => e.CategoryId).HasColumnName("categoryId");
             entity.Property(e => e.CategoryName)
                 .HasMaxLength(255)
                 .HasColumnName("categoryName");
@@ -115,11 +108,9 @@ public partial class TracioDbContext : DbContext
 
         modelBuilder.Entity<BlogTag>(entity =>
         {
-            entity.HasKey(e => e.LagId).HasName("PK__BlogTags__4AF427FF4EAEB4DA");
+            entity.HasKey(e => e.TagId).HasName("PK__BlogTags__50FC01578EDDCA23");
 
-            entity.Property(e => e.LagId)
-                .ValueGeneratedNever()
-                .HasColumnName("lagId");
+            entity.Property(e => e.TagId).HasColumnName("tagId");
             entity.Property(e => e.TagName)
                 .HasMaxLength(255)
                 .HasColumnName("tagName");
@@ -127,11 +118,9 @@ public partial class TracioDbContext : DbContext
 
         modelBuilder.Entity<Booking>(entity =>
         {
-            entity.HasKey(e => e.BookingId).HasName("PK__Bookings__C6D03BCDD8F4034A");
+            entity.HasKey(e => e.BookingId).HasName("PK__Bookings__C6D03BCD395AA970");
 
-            entity.Property(e => e.BookingId)
-                .ValueGeneratedNever()
-                .HasColumnName("bookingId");
+            entity.Property(e => e.BookingId).HasColumnName("bookingId");
             entity.Property(e => e.BookingDate)
                 .HasColumnType("datetime")
                 .HasColumnName("bookingDate");
@@ -146,16 +135,14 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.Bookings)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Bookings__userId__5165187F");
+                .HasConstraintName("FK__Bookings__userId__3F466844");
         });
 
         modelBuilder.Entity<BookingProduct>(entity =>
         {
-            entity.HasKey(e => e.ProductBookingId).HasName("PK__BookingP__DAC8E761DC54D71F");
+            entity.HasKey(e => e.ProductBookingId).HasName("PK__BookingP__DAC8E7610CF4C426");
 
-            entity.Property(e => e.ProductBookingId)
-                .ValueGeneratedNever()
-                .HasColumnName("productBookingId");
+            entity.Property(e => e.ProductBookingId).HasColumnName("productBookingId");
             entity.Property(e => e.BookingId).HasColumnName("bookingId");
             entity.Property(e => e.Notes).HasColumnName("notes");
             entity.Property(e => e.ProductId).HasColumnName("productId");
@@ -165,20 +152,18 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.Booking).WithMany(p => p.BookingProducts)
                 .HasForeignKey(d => d.BookingId)
-                .HasConstraintName("FK__BookingPr__booki__60A75C0F");
+                .HasConstraintName("FK__BookingPr__booki__4E88ABD4");
 
             entity.HasOne(d => d.Product).WithMany(p => p.BookingProducts)
                 .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__BookingPr__produ__5FB337D6");
+                .HasConstraintName("FK__BookingPr__produ__4D94879B");
         });
 
         modelBuilder.Entity<BookingService>(entity =>
         {
-            entity.HasKey(e => e.ServiceBookingId).HasName("PK__BookingS__37EED9307FB474C2");
+            entity.HasKey(e => e.ServiceBookingId).HasName("PK__BookingS__37EED9306FD7CC74");
 
-            entity.Property(e => e.ServiceBookingId)
-                .ValueGeneratedNever()
-                .HasColumnName("serviceBookingId");
+            entity.Property(e => e.ServiceBookingId).HasColumnName("serviceBookingId");
             entity.Property(e => e.BookingId).HasColumnName("bookingId");
             entity.Property(e => e.Notes).HasColumnName("notes");
             entity.Property(e => e.ServiceId).HasColumnName("serviceId");
@@ -188,22 +173,20 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.Booking).WithMany(p => p.BookingServices)
                 .HasForeignKey(d => d.BookingId)
-                .HasConstraintName("FK__BookingSe__booki__5812160E");
+                .HasConstraintName("FK__BookingSe__booki__45F365D3");
 
             entity.HasOne(d => d.Service).WithMany(p => p.BookingServices)
                 .HasForeignKey(d => d.ServiceId)
-                .HasConstraintName("FK__BookingSe__servi__571DF1D5");
+                .HasConstraintName("FK__BookingSe__servi__44FF419A");
         });
 
         modelBuilder.Entity<ChatOfGroup>(entity =>
         {
-            entity.HasKey(e => e.GroupChatId).HasName("PK__ChatOfGr__8453A3970E22601D");
+            entity.HasKey(e => e.GroupChatId).HasName("PK__ChatOfGr__8453A397ED9ED409");
 
             entity.ToTable("ChatOfGroup");
 
-            entity.Property(e => e.GroupChatId)
-                .ValueGeneratedNever()
-                .HasColumnName("groupChatId");
+            entity.Property(e => e.GroupChatId).HasColumnName("groupChatId");
             entity.Property(e => e.Content).HasColumnName("content");
             entity.Property(e => e.CreatedTime)
                 .HasColumnType("datetime")
@@ -213,22 +196,20 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.Group).WithMany(p => p.ChatOfGroups)
                 .HasForeignKey(d => d.GroupId)
-                .HasConstraintName("FK__ChatOfGro__group__7A672E12");
+                .HasConstraintName("FK__ChatOfGro__group__693CA210");
 
             entity.HasOne(d => d.User).WithMany(p => p.ChatOfGroups)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__ChatOfGro__userI__797309D9");
+                .HasConstraintName("FK__ChatOfGro__userI__68487DD7");
         });
 
         modelBuilder.Entity<Group>(entity =>
         {
-            entity.HasKey(e => e.GroupId).HasName("PK__Group__88C1034D3F0F1B0B");
+            entity.HasKey(e => e.GroupId).HasName("PK__Group__88C1034DE87CDEF9");
 
             entity.ToTable("Group");
 
-            entity.Property(e => e.GroupId)
-                .ValueGeneratedNever()
-                .HasColumnName("groupId");
+            entity.Property(e => e.GroupId).HasColumnName("groupId");
             entity.Property(e => e.CreatedTime)
                 .HasColumnType("datetime")
                 .HasColumnName("createdTime");
@@ -247,16 +228,15 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.Creator).WithMany(p => p.Groups)
                 .HasForeignKey(d => d.CreatorId)
-                .HasConstraintName("FK__Group__creatorId__72C60C4A");
+                .HasConstraintName("FK__Group__creatorId__619B8048");
         });
 
         modelBuilder.Entity<GroupMember>(entity =>
         {
-            entity.HasKey(e => e.MemberShipId).HasName("PK__GroupMem__543A6D5B417965D7");
+            entity.HasKey(e => e.MemberShipId).HasName("PK__GroupMem__543A6D5BF8456B05");
 
             entity.ToTable("GroupMember");
 
-            entity.Property(e => e.MemberShipId).ValueGeneratedNever();
             entity.Property(e => e.GroupId).HasColumnName("groupId");
             entity.Property(e => e.JoinedTime)
                 .HasColumnType("datetime")
@@ -268,20 +248,18 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.Group).WithMany(p => p.GroupMembers)
                 .HasForeignKey(d => d.GroupId)
-                .HasConstraintName("FK__GroupMemb__group__75A278F5");
+                .HasConstraintName("FK__GroupMemb__group__6477ECF3");
 
             entity.HasOne(d => d.User).WithMany(p => p.GroupMembers)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__GroupMemb__userI__76969D2E");
+                .HasConstraintName("FK__GroupMemb__userI__656C112C");
         });
 
         modelBuilder.Entity<GroupRoute>(entity =>
         {
-            entity.HasKey(e => e.GroupRouteId).HasName("PK__GroupRou__D8AC9C322017F58E");
+            entity.HasKey(e => e.GroupRouteId).HasName("PK__GroupRou__D8AC9C3240222212");
 
-            entity.Property(e => e.GroupRouteId)
-                .ValueGeneratedNever()
-                .HasColumnName("groupRouteId");
+            entity.Property(e => e.GroupRouteId).HasColumnName("groupRouteId");
             entity.Property(e => e.Content).HasColumnName("content");
             entity.Property(e => e.GroupId).HasColumnName("groupId");
             entity.Property(e => e.RouteId).HasColumnName("routeId");
@@ -289,20 +267,18 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.Group).WithMany(p => p.GroupRoutes)
                 .HasForeignKey(d => d.GroupId)
-                .HasConstraintName("FK__GroupRout__group__06CD04F7");
+                .HasConstraintName("FK__GroupRout__group__75A278F5");
 
             entity.HasOne(d => d.Route).WithMany(p => p.GroupRoutes)
                 .HasForeignKey(d => d.RouteId)
-                .HasConstraintName("FK__GroupRout__route__07C12930");
+                .HasConstraintName("FK__GroupRout__route__76969D2E");
         });
 
         modelBuilder.Entity<Product>(entity =>
         {
-            entity.HasKey(e => e.ProductId).HasName("PK__Products__2D10D16A286F2A66");
+            entity.HasKey(e => e.ProductId).HasName("PK__Products__2D10D16A751C21D1");
 
-            entity.Property(e => e.ProductId)
-                .ValueGeneratedNever()
-                .HasColumnName("productId");
+            entity.Property(e => e.ProductId).HasColumnName("productId");
             entity.Property(e => e.CategoryId).HasColumnName("categoryId");
             entity.Property(e => e.Condition).HasColumnName("condition");
             entity.Property(e => e.CreatedTime)
@@ -320,16 +296,14 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.Category).WithMany(p => p.Products)
                 .HasForeignKey(d => d.CategoryId)
-                .HasConstraintName("FK__Products__catego__5CD6CB2B");
+                .HasConstraintName("FK__Products__catego__4AB81AF0");
         });
 
         modelBuilder.Entity<ProductsCategory>(entity =>
         {
-            entity.HasKey(e => e.CategoryId).HasName("PK__Products__23CAF1D807B22580");
+            entity.HasKey(e => e.CategoryId).HasName("PK__Products__23CAF1D811636B80");
 
-            entity.Property(e => e.CategoryId)
-                .ValueGeneratedNever()
-                .HasColumnName("categoryId");
+            entity.Property(e => e.CategoryId).HasColumnName("categoryId");
             entity.Property(e => e.CategoryName)
                 .HasMaxLength(255)
                 .HasColumnName("categoryName");
@@ -341,16 +315,17 @@ public partial class TracioDbContext : DbContext
 
         modelBuilder.Entity<Review>(entity =>
         {
-            entity.HasKey(e => e.ReviewId).HasName("PK__Reviews__2ECD6E0493C9EA31");
+            entity.HasKey(e => e.ReviewId).HasName("PK__Reviews__2ECD6E04338822CD");
 
-            entity.Property(e => e.ReviewId)
-                .ValueGeneratedNever()
-                .HasColumnName("reviewId");
+            entity.Property(e => e.ReviewId).HasColumnName("reviewId");
             entity.Property(e => e.Content).HasColumnName("content");
             entity.Property(e => e.CreatedTime)
                 .HasColumnType("datetime")
                 .HasColumnName("createdTime");
             entity.Property(e => e.Rating).HasColumnName("rating");
+            entity.Property(e => e.Status)
+                .HasMaxLength(50)
+                .HasColumnName("status");
             entity.Property(e => e.TargetId).HasColumnName("targetId");
             entity.Property(e => e.TargetType)
                 .HasMaxLength(255)
@@ -359,16 +334,14 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.Reviews)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Reviews__userId__6383C8BA");
+                .HasConstraintName("FK__Reviews__userId__5165187F");
         });
 
         modelBuilder.Entity<Role>(entity =>
         {
-            entity.HasKey(e => e.RoleId).HasName("PK__Roles__CD98462ABFAD4745");
+            entity.HasKey(e => e.RoleId).HasName("PK__Roles__CD98462A2BE0A9C9");
 
-            entity.Property(e => e.RoleId)
-                .ValueGeneratedNever()
-                .HasColumnName("roleId");
+            entity.Property(e => e.RoleId).HasColumnName("roleId");
             entity.Property(e => e.Permissions).HasColumnName("permissions");
             entity.Property(e => e.RoleName)
                 .HasMaxLength(255)
@@ -377,11 +350,9 @@ public partial class TracioDbContext : DbContext
 
         modelBuilder.Entity<Route>(entity =>
         {
-            entity.HasKey(e => e.RouteId).HasName("PK__Routes__BAC024C7D2A2FDBD");
+            entity.HasKey(e => e.RouteId).HasName("PK__Routes__BAC024C7EE29B214");
 
-            entity.Property(e => e.RouteId)
-                .ValueGeneratedNever()
-                .HasColumnName("routeId");
+            entity.Property(e => e.RouteId).HasColumnName("routeId");
             entity.Property(e => e.CreatedTime)
                 .HasColumnType("datetime")
                 .HasColumnName("createdTime");
@@ -400,16 +371,14 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.Creator).WithMany(p => p.Routes)
                 .HasForeignKey(d => d.CreatorId)
-                .HasConstraintName("FK__Routes__creatorI__7D439ABD");
+                .HasConstraintName("FK__Routes__creatorI__6C190EBB");
         });
 
         modelBuilder.Entity<RouteCheckpoint>(entity =>
         {
-            entity.HasKey(e => e.PointId).HasName("PK__RouteChe__4CB435AE19DB62D3");
+            entity.HasKey(e => e.PointId).HasName("PK__RouteChe__4CB435AE529C9236");
 
-            entity.Property(e => e.PointId)
-                .ValueGeneratedNever()
-                .HasColumnName("pointId");
+            entity.Property(e => e.PointId).HasColumnName("pointId");
             entity.Property(e => e.Description).HasColumnName("description");
             entity.Property(e => e.Lng).HasColumnName("lng");
             entity.Property(e => e.PointName)
@@ -418,39 +387,38 @@ public partial class TracioDbContext : DbContext
             entity.Property(e => e.PointNumber).HasColumnName("pointNumber");
             entity.Property(e => e.SegmentId).HasColumnName("segmentId");
             entity.Property(e => e.SequenceNumber).HasColumnName("sequenceNumber");
+            entity.Property(e => e.Status)
+                .HasMaxLength(50)
+                .HasColumnName("status");
 
             entity.HasOne(d => d.Segment).WithMany(p => p.RouteCheckpoints)
                 .HasForeignKey(d => d.SegmentId)
-                .HasConstraintName("FK__RouteChec__segme__00200768");
+                .HasConstraintName("FK__RouteChec__segme__6EF57B66");
         });
 
         modelBuilder.Entity<RouteReference>(entity =>
         {
-            entity.HasKey(e => e.ReferenceId).HasName("PK__RouteRef__7B826DDE38F08AA5");
+            entity.HasKey(e => e.ReferenceId).HasName("PK__RouteRef__7B826DDEA9D955CB");
 
-            entity.Property(e => e.ReferenceId)
-                .ValueGeneratedNever()
-                .HasColumnName("referenceId");
+            entity.Property(e => e.ReferenceId).HasColumnName("referenceId");
             entity.Property(e => e.BlogId).HasColumnName("blogId");
             entity.Property(e => e.Description).HasColumnName("description");
             entity.Property(e => e.RouteId).HasColumnName("routeId");
 
             entity.HasOne(d => d.Blog).WithMany(p => p.RouteReferences)
                 .HasForeignKey(d => d.BlogId)
-                .HasConstraintName("FK__RouteRefe__blogI__02FC7413");
+                .HasConstraintName("FK__RouteRefe__blogI__71D1E811");
 
             entity.HasOne(d => d.Route).WithMany(p => p.RouteReferences)
                 .HasForeignKey(d => d.RouteId)
-                .HasConstraintName("FK__RouteRefe__route__03F0984C");
+                .HasConstraintName("FK__RouteRefe__route__72C60C4A");
         });
 
         modelBuilder.Entity<Service>(entity =>
         {
-            entity.HasKey(e => e.ServiceId).HasName("PK__Services__455070DF0F3BF123");
+            entity.HasKey(e => e.ServiceId).HasName("PK__Services__455070DF61C080D5");
 
-            entity.Property(e => e.ServiceId)
-                .ValueGeneratedNever()
-                .HasColumnName("serviceId");
+            entity.Property(e => e.ServiceId).HasColumnName("serviceId");
             entity.Property(e => e.Availability).HasColumnName("availability");
             entity.Property(e => e.CategoryId).HasColumnName("categoryId");
             entity.Property(e => e.Description).HasColumnName("description");
@@ -468,16 +436,14 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.Category).WithMany(p => p.Services)
                 .HasForeignKey(d => d.CategoryId)
-                .HasConstraintName("FK__Services__catego__5441852A");
+                .HasConstraintName("FK__Services__catego__4222D4EF");
         });
 
         modelBuilder.Entity<ServiceCategory>(entity =>
         {
-            entity.HasKey(e => e.CategoryId).HasName("PK__ServiceC__23CAF1D8EBB3CF64");
+            entity.HasKey(e => e.CategoryId).HasName("PK__ServiceC__23CAF1D8C383CAB7");
 
-            entity.Property(e => e.CategoryId)
-                .ValueGeneratedNever()
-                .HasColumnName("categoryId");
+            entity.Property(e => e.CategoryId).HasColumnName("categoryId");
             entity.Property(e => e.CategoryName)
                 .HasMaxLength(255)
                 .HasColumnName("categoryName");
@@ -489,13 +455,11 @@ public partial class TracioDbContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__Users__CB9A1CFF06904314");
+            entity.HasKey(e => e.UserId).HasName("PK__Users__CB9A1CFFE397DAC0");
 
-            entity.HasIndex(e => e.Email, "UQ__Users__AB6E61644D63A23C").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Users__AB6E6164B1F52597").IsUnique();
 
-            entity.Property(e => e.UserId)
-                .ValueGeneratedNever()
-                .HasColumnName("userId");
+            entity.Property(e => e.UserId).HasColumnName("userId");
             entity.Property(e => e.Address).HasColumnName("address");
             entity.Property(e => e.CreatedTime)
                 .HasColumnType("datetime")
@@ -522,7 +486,7 @@ public partial class TracioDbContext : DbContext
 
             entity.HasOne(d => d.Role).WithMany(p => p.Users)
                 .HasForeignKey(d => d.RoleId)
-                .HasConstraintName("FK__Users__roleId__4CA06362");
+                .HasConstraintName("FK__Users__roleId__3A81B327");
         });
 
         OnModelCreatingPartial(modelBuilder);

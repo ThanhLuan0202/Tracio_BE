@@ -9,7 +9,9 @@ namespace Tracio.Service
         public static IServiceCollection AddServices(this IServiceCollection service)
         {
             service.AddTransient<IProductCategoryService, ProductCategoryService>();
-            
+            service.AddTransient<IAuthenService, AuthenService>();
+
+
             return service;
         }
     }

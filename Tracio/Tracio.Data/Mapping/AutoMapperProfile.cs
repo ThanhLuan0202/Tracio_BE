@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tracio.Data.Entities;
 using Tracio.Data.Models;
+using Tracio.Data.Models.LoginModel;
 using Tracio.Data.Models.ProductCategoryModel;
 
 namespace Tracio.Data.Mapping
@@ -16,6 +17,9 @@ namespace Tracio.Data.Mapping
             CreateMap<ViewProductCategoryModel, ProductsCategory>().ReverseMap();
             CreateMap<CreateProductCategoryModel, ProductsCategory>().ReverseMap();
             CreateMap<UpdateProductCategoryModel, ProductsCategory>().ReverseMap();
+            CreateMap<RegisterLoginModel, User>().ReverseMap();
+
+
 
 
 

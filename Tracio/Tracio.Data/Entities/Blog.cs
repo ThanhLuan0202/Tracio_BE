@@ -23,8 +23,6 @@ public partial class Blog
 
     public DateTime? UpdatedTime { get; set; }
 
-    public string? Status { get; set; }
-
     public virtual User? Author { get; set; }
 
     public virtual BlogCategory? Category { get; set; }
