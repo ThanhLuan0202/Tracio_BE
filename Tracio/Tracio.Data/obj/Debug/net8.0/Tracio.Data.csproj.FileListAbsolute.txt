@@ -27,3 +27,18 @@ C:\Users\luann\OneDrive\Máy tính\Tracio_BE\Tracio_BE\Tracio\Tracio.Data\obj\De
 C:\Users\luann\OneDrive\Máy tính\Tracio_BE\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\Tracio.Data.pdb
 C:\Users\luann\OneDrive\Máy tính\Tracio_BE\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\Tracio.Data.genruntimeconfig.cache
 C:\Users\luann\OneDrive\Máy tính\Tracio_BE\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\ref\Tracio.Data.dll
+D:\swd\Tracio_BE\Tracio\Tracio.Data\bin\Debug\net8.0\Tracio.Data.deps.json
+D:\swd\Tracio_BE\Tracio\Tracio.Data\bin\Debug\net8.0\Tracio.Data.runtimeconfig.json
+D:\swd\Tracio_BE\Tracio\Tracio.Data\bin\Debug\net8.0\Tracio.Data.dll
+D:\swd\Tracio_BE\Tracio\Tracio.Data\bin\Debug\net8.0\Tracio.Data.pdb
+D:\swd\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\Tracio.Data.csproj.AssemblyReference.cache
+D:\swd\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\Tracio.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\swd\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\Tracio.Data.AssemblyInfoInputs.cache
+D:\swd\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\Tracio.Data.AssemblyInfo.cs
+D:\swd\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\Tracio.Data.csproj.CoreCompileInputs.cache
+D:\swd\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\Tracio.Data.sourcelink.json
+D:\swd\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\Tracio.Data.dll
+D:\swd\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\refint\Tracio.Data.dll
+D:\swd\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\Tracio.Data.pdb
+D:\swd\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\Tracio.Data.genruntimeconfig.cache
+D:\swd\Tracio_BE\Tracio\Tracio.Data\obj\Debug\net8.0\ref\Tracio.Data.dll

@@ -719,10 +719,7 @@
           "Microsoft.Extensions.DependencyInjection": "9.0.2"
         },
         "runtime": {
-          "Tracio.Data.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Tracio.Data.dll": {}
         }
       }
     }

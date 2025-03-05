@@ -3210,19 +3210,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luann\\.nuget\\packages\\": {}
+    "C:\\Users\\sasuk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luann\\OneDrive\\Máy tính\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Tracio.Service.csproj",
+      "projectUniqueName": "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Service\\Tracio.Service.csproj",
       "projectName": "Tracio.Service",
-      "projectPath": "C:\\Users\\luann\\OneDrive\\Máy tính\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\Tracio.Service.csproj",
-      "packagesPath": "C:\\Users\\luann\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luann\\OneDrive\\Máy tính\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Service\\obj\\",
+      "projectPath": "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Service\\Tracio.Service.csproj",
+      "packagesPath": "C:\\Users\\sasuk\\.nuget\\packages\\",
+      "outputPath": "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\luann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sasuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3237,8 +3237,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\luann\\OneDrive\\Máy tính\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj": {
-              "projectPath": "C:\\Users\\luann\\OneDrive\\Máy tính\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj"
+            "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj": {
+              "projectPath": "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj"
             }
           }
         }
@@ -3279,7 +3279,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luann\\OneDrive\\Máy tính\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj": {}
+    "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luann\\OneDrive\\Máy tính\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj": {
+    "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luann\\OneDrive\\Máy tính\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj",
+        "projectUniqueName": "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj",
         "projectName": "Tracio.Data",
-        "projectPath": "C:\\Users\\luann\\OneDrive\\Máy tính\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj",
-        "packagesPath": "C:\\Users\\luann\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luann\\OneDrive\\Máy tính\\Tracio_BE\\Tracio_BE\\Tracio\\Tracio.Data\\obj\\",
+        "projectPath": "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj",
+        "packagesPath": "C:\\Users\\sasuk\\.nuget\\packages\\",
+        "outputPath": "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\luann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sasuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

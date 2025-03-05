@@ -8,7 +8,8 @@ namespace Tracio.Data.Models.ServiceCategoryModel
 {
     public class ViewServiceCategoryModel
     {
+        public string? CategoryName { get; set; }
 
-
+        public string? Description { get; set; }
     }
 }
