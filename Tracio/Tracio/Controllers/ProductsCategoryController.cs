@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -52,6 +53,8 @@ namespace Tracio.API.Controllers
 
         // POST api/<CategoryController>
         [HttpPost("create-category")]
+        [Authorize(Roles = "Staff")]
+
         public async Task<ActionResult<ProductsCategory>> CreateProductCategory([FromBody] CreateProductCategoryModel createProductCategoryModel)
         {
             if (!ModelState.IsValid)
@@ -80,6 +83,8 @@ namespace Tracio.API.Controllers
 
         // PUT api/<CategoryController>/5
         [HttpPut("{id}")]
+        [Authorize(Roles = "Staff")]
+
         public async Task<ActionResult<ProductsCategory>> UpdateProductCategory(int id, [FromBody] UpdateProductCategoryModel updateProductCategoryModel)
         {
             if (!ModelState.IsValid)
@@ -109,6 +114,8 @@ namespace Tracio.API.Controllers
 
         // DELETE api/<CategoryController>/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Staff")]
+
         public async Task<ActionResult<ProductsCategory>> DeleteProductCategory(int id)
         {
             if (!ModelState.IsValid)

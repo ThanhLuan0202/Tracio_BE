@@ -42,6 +42,7 @@ namespace Tracio.Data.Repositories
             }
 
             existServiceCategory.Status = "Inactive";
+            await _dbContext.SaveChangesAsync();
             return existServiceCategory;
         }
 
@@ -67,7 +68,7 @@ namespace Tracio.Data.Repositories
         public async Task<ServiceCategory> UpdateServiceCategory(int id, ServiceCategory ServiceCategoryUpdate)
         {
             var checkServiceCategory = await Entities.FirstOrDefaultAsync(x => x.CategoryId.Equals(id));
-            if (checkServiceCategory != null)
+            if (checkServiceCategory == null)
             {
                 throw new Exception($"Service Category is not exits");
             }

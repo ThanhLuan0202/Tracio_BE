@@ -12,6 +12,7 @@ namespace Tracio.Service
             service.AddTransient<IAuthenService, AuthenService>();
             service.AddTransient<IServiceCategoryService, ServiceCategoryService>();
 
+            service.AddTransient<IProductService, ProductService>();
 
 
             return service;

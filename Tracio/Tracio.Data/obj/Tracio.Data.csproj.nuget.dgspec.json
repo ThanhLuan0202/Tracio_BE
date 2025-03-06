@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj": {}
+    "C:\\Users\\luann\\OneDrive\\Máy tính\\be2\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj": {}
   },
   "projects": {
-    "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj": {
+    "C:\\Users\\luann\\OneDrive\\Máy tính\\be2\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj",
+        "projectUniqueName": "C:\\Users\\luann\\OneDrive\\Máy tính\\be2\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj",
         "projectName": "Tracio.Data",
-        "projectPath": "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj",
-        "packagesPath": "C:\\Users\\sasuk\\.nuget\\packages\\",
-        "outputPath": "D:\\swd\\Tracio_BE\\Tracio\\Tracio.Data\\obj\\",
+        "projectPath": "C:\\Users\\luann\\OneDrive\\Máy tính\\be2\\Tracio_BE\\Tracio\\Tracio.Data\\Tracio.Data.csproj",
+        "packagesPath": "C:\\Users\\luann\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luann\\OneDrive\\Máy tính\\be2\\Tracio_BE\\Tracio\\Tracio.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sasuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luann\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,6 +53,14 @@
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -103,7 +111,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
