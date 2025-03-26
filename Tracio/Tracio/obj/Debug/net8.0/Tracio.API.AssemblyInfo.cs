@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("122fecf6-fa23-4cbf-9268-cf428e4148f9")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tracio.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8611978c97ee0436465418761b4d5ca2f733ab5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+462834b4adc76d948ccab7a0bb232c022e3ba07e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tracio.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tracio.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

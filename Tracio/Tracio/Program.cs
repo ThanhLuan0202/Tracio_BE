@@ -11,6 +11,10 @@ using Tracio.Service.Interfaces;
 using Tracio.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+builder.WebHost.UseUrls($"http://*:{port}");
+
+builder.Services.AddHealthChecks();
 
 builder.Services.AddDbContext<TracioDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("TracioDB"),
@@ -86,6 +90,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 
 var app = builder.Build();
+app.UseHealthChecks("/health");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
