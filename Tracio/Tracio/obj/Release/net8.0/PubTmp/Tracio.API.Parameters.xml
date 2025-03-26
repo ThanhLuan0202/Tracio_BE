@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Tracio" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\luann\\OneDrive\\Máy\ tính\\be2\\Tracio_BE\\Tracio\\Tracio\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="Tracio.Data.Data.TracioDbContext" description="" value="Data Source=tracio-sql.database.windows.net,1433;Initial Catalog=Tracio-sql;User ID=tracio;Password=K0cogilamkodc" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\luann\\OneDrive\\Máy\ tính\\be2\\Tracio_BE\\Tracio\\Tracio\\obj\\Release\\net8\.0\\PubTmp\\EFSQLScripts\\Tracio\.Data\.Data\.TracioDbContext\.sql$" />
+  </parameter>
+</parameters>

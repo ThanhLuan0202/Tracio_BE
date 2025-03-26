@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <History>True|2025-03-26T05:29:03.6835866Z||;True|2025-03-26T12:23:40.4721847+07:00||;True|2025-03-26T12:19:26.8598998+07:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <AzureDBConnectionStrings Include="Data Source=tracio-sql.database.windows.net,1433;Initial Catalog=Tracio-sql;User ID=tracio;Password=K0cogilamkodc" />
+    <AzureDBConnectionStrings Include="REDACTED" />
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Tracio.Data.Data.TracioDbContext">
+      <Value>Data Source=tracio-sql.database.windows.net,1433%3bInitial Catalog=Tracio-sql%3bUser ID=tracio%3bPassword=K0cogilamkodc</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
