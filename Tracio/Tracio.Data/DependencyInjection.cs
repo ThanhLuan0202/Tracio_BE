@@ -18,6 +18,7 @@ namespace Tracio.Data
             service.AddTransient<IServiceRepository, ServiceRepository>();
 
             service.AddTransient<IProductRepository, ProductRepository>();
+            service.AddTransient<IUserRepository, UserRepository>();
 
 
 

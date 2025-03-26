@@ -58,6 +58,14 @@
               "target": "Package",
               "version": "[1.0.3, )"
             },
+            "Google.Apis.Gmail.v1": {
+              "target": "Package",
+              "version": "[1.68.0.3427, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            },
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.3.0, )"
@@ -161,6 +169,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -232,6 +244,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.69.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.5, )"
@@ -253,6 +273,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[7.3.1, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

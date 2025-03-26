@@ -781,10 +781,16 @@ namespace Tracio.Data.Migrations
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("email");
 
+                    b.Property<string>("EmailConfirmationToken")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FullName")
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)")
                         .HasColumnName("fullName");
+
+                    b.Property<bool>("IsEmailConfirmed")
+                        .HasColumnType("bit");
 
                     b.Property<int?>("MemberShipId")
                         .HasColumnType("int");

@@ -1,5 +1,9 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using Tracio.Data;
 using Tracio.Data.Entities;
 using Tracio.Data.Models.LoginModel;
@@ -24,9 +28,9 @@ namespace Tracio.API.Controllers
             _service = service;
             _unitOfWork = unitOfWork;
         }
-       
 
-        
+
+
 
         // POST api/<AuthenController>
         [HttpPost]
@@ -50,11 +54,11 @@ namespace Tracio.API.Controllers
                 var cookieOptions = new CookieOptions
                 {
                     HttpOnly = false,
-                    Secure = true,   
-                    SameSite = SameSiteMode.None, 
+                    Secure = true,
+                    SameSite = SameSiteMode.None,
                     Expires = DateTime.Now.AddDays(7),
                     Path = "/",
-                    
+
                 };
                 Response.Cookies.Append("authToken", (string)token, cookieOptions);
                 //_unitOfWork.CommitTransaction();
@@ -78,15 +82,29 @@ namespace Tracio.API.Controllers
             {
                 return BadRequest(ModelState);
             }
-            var newUser =  _mapper.Map<User>(registerLoginModel);
+            var newUser = _mapper.Map<User>(registerLoginModel);
 
-             await _service.Register(newUser);
+            await _service.Register(newUser);
 
             return Ok(newUser);
+        }
 
+        [HttpGet("/signin-google")]
+        public async Task<IActionResult> GoogleCallBack([FromQuery] string code)
+        {
+            var authResult = await HttpContext.AuthenticateAsync(JwtBearerDefaults.AuthenticationScheme);
+            if (!authResult.Succeeded)
+                return BadRequest("Google authentication failed!");
 
+            var claims = authResult.Principal.Identities.FirstOrDefault()?.Claims;
+            var email = claims?.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+            var name = claims?.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
+            if (string.IsNullOrEmpty(email))
+                return BadRequest("Email not found!");
+
+            return Ok(authResult);
         }
 
 
-        }
+    }
 }

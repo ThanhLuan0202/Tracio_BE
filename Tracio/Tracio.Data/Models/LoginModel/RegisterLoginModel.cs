@@ -19,6 +19,7 @@ namespace Tracio.Data.Models.LoginModel
         public string? PhoneNumber { get; set; }
 
         public int? RoleId { get; set; }
+      
 
         public string? Address { get; set; }
 

@@ -53,7 +53,7 @@ namespace Tracio.API.Controllers
 
         // POST api/<CategoryController>
         [HttpPost("create-category")]
-        [Authorize(Roles = "Staff")]
+        //[Authorize(Roles = "Staff")]
 
         public async Task<ActionResult<ProductsCategory>> CreateProductCategory([FromBody] CreateProductCategoryModel createProductCategoryModel)
         {
@@ -83,7 +83,7 @@ namespace Tracio.API.Controllers
 
         // PUT api/<CategoryController>/5
         [HttpPut("{id}")]
-        [Authorize(Roles = "Staff")]
+        //[Authorize(Roles = "Staff")]
 
         public async Task<ActionResult<ProductsCategory>> UpdateProductCategory(int id, [FromBody] UpdateProductCategoryModel updateProductCategoryModel)
         {

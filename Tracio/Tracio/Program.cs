@@ -1,11 +1,14 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using Tracio.Data;
 using Tracio.Data.Data;
 using Tracio.Service;
+using Tracio.Service.Interfaces;
+using Tracio.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -67,7 +70,18 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
                    ValidAudience = builder.Configuration["Jwt:Audience"],
                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-               });
+               })
+               .AddCookie()
+               .AddGoogle(googleOptions =>
+               {
+                   // Đọc thông tin Authentication:Google từ appsettings.json
+                   IConfigurationSection googleAuthNSection = builder.Configuration.GetSection("Authentication:Google");
+
+                   // Thiết lập ClientId và ClientSecret để truy cập API Google
+                   googleOptions.ClientId = googleAuthNSection["ClientId"];
+                   googleOptions.ClientSecret = googleAuthNSection["ClientSecret"];
+                   googleOptions.CallbackPath = "/signin-google";
+               }); 
 
 
 
@@ -82,6 +96,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

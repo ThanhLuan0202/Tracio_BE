@@ -27,6 +27,7 @@ namespace Tracio.Data.Repositories
             _DbContext = DbContext;
             _configuration = configuration;
         }
+
         
 
         public async Task<string> Login(LoginModel model)
