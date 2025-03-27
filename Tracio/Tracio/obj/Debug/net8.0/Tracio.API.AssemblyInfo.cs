@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tracio.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa934969a1c47ba88629a620eb6aa6225a75cec6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+498decaa9e6ed4c92868f73b768f5e85df3a839c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tracio.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tracio.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
