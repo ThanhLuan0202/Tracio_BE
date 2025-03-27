@@ -1,0 +1,1632 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Tracio API",
+    "version": "V1"
+  },
+  "paths": {
+    "/api/Authen/Login": {
+      "post": {
+        "tags": [
+          "Authen"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/LoginModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        }
+      }
+    },
+    "/api/Authen/Register": {
+      "post": {
+        "tags": [
+          "Authen"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/RegisterLoginModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        }
+      }
+    },
+    "/signin-google": {
+      "get": {
+        "tags": [
+          "Authen"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "code",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Product": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Product"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "ProductName",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Description",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "StockQuantity",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "CategoryId",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "Condition",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Image",
+            "type": "file"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          }
+        }
+      }
+    },
+    "/api/Product/{id}": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Product"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "ProductName",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Description",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "StockQuantity",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "CategoryId",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "Condition",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Image",
+            "type": "file"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Product"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ProductsCategory": {
+      "get": {
+        "tags": [
+          "ProductsCategory"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ProductsCategory"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ProductsCategory/{id}": {
+      "get": {
+        "tags": [
+          "ProductsCategory"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ProductsCategory"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ProductsCategory"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateProductCategoryModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ProductsCategory"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ProductsCategory"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ProductsCategory"
+            }
+          }
+        }
+      }
+    },
+    "/api/ProductsCategory/create-category": {
+      "post": {
+        "tags": [
+          "ProductsCategory"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateProductCategoryModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ProductsCategory"
+            }
+          }
+        }
+      }
+    },
+    "/api/ServiceCategory": {
+      "get": {
+        "tags": [
+          "ServiceCategory"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ServiceCategory"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ServiceCategory"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateServiceCategoryModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ServiceCategory"
+            }
+          }
+        }
+      }
+    },
+    "/api/ServiceCategory/{id}": {
+      "get": {
+        "tags": [
+          "ServiceCategory"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ServiceCategory"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ServiceCategory"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateServiceCategoryModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ServiceCategory"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ServiceCategory"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ServiceCategory"
+            }
+          }
+        }
+      }
+    },
+    "/api/User": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/{email}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "email",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        }
+      }
+    },
+    "/api/User/{id}": {
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/WeatherForecast"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Blog": {
+      "type": "object",
+      "properties": {
+        "blogId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "authorId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "categoryId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string"
+        },
+        "tagId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "likeCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "createdTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "updatedTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "author": {
+          "$ref": "#/definitions/User"
+        },
+        "category": {
+          "$ref": "#/definitions/BlogCategory"
+        },
+        "routeReferences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RouteReference"
+          }
+        },
+        "tag": {
+          "$ref": "#/definitions/BlogTag"
+        }
+      },
+      "additionalProperties": false
+    },
+    "BlogCategory": {
+      "type": "object",
+      "properties": {
+        "categoryId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "categoryName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "blogs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Blog"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "BlogTag": {
+      "type": "object",
+      "properties": {
+        "tagId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "tagName": {
+          "type": "string"
+        },
+        "blogs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Blog"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Booking": {
+      "type": "object",
+      "properties": {
+        "bookingId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "bookingDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "totalAmount": {
+          "format": "double",
+          "type": "number"
+        },
+        "bookingProducts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BookingProduct"
+          }
+        },
+        "bookingServices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BookingService"
+          }
+        },
+        "user": {
+          "$ref": "#/definitions/User"
+        }
+      },
+      "additionalProperties": false
+    },
+    "BookingProduct": {
+      "type": "object",
+      "properties": {
+        "productBookingId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "productId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "bookingId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "quantity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "subtotal": {
+          "format": "double",
+          "type": "number"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "booking": {
+          "$ref": "#/definitions/Booking"
+        },
+        "product": {
+          "$ref": "#/definitions/Product"
+        }
+      },
+      "additionalProperties": false
+    },
+    "BookingService": {
+      "type": "object",
+      "properties": {
+        "serviceBookingId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "serviceId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "bookingId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "quantity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "subtotal": {
+          "format": "double",
+          "type": "number"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "booking": {
+          "$ref": "#/definitions/Booking"
+        },
+        "service": {
+          "$ref": "#/definitions/Service"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ChatOfGroup": {
+      "type": "object",
+      "properties": {
+        "groupChatId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "content": {
+          "type": "string"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "groupId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "createdTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "group": {
+          "$ref": "#/definitions/Group"
+        },
+        "user": {
+          "$ref": "#/definitions/User"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CreateProductCategoryModel": {
+      "type": "object",
+      "properties": {
+        "categoryName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CreateServiceCategoryModel": {
+      "type": "object",
+      "properties": {
+        "categoryName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Group": {
+      "type": "object",
+      "properties": {
+        "groupId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "groupName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "creatorId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "memberCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "createdTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "updatedTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "chatOfGroups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ChatOfGroup"
+          }
+        },
+        "creator": {
+          "$ref": "#/definitions/User"
+        },
+        "groupMembers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GroupMember"
+          }
+        },
+        "groupRoutes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GroupRoute"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "GroupMember": {
+      "type": "object",
+      "properties": {
+        "memberShipId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "groupId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "joinedTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "group": {
+          "$ref": "#/definitions/Group"
+        },
+        "user": {
+          "$ref": "#/definitions/User"
+        }
+      },
+      "additionalProperties": false
+    },
+    "GroupRoute": {
+      "type": "object",
+      "properties": {
+        "groupRouteId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "groupId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "routeId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "content": {
+          "type": "string"
+        },
+        "sharedTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "group": {
+          "$ref": "#/definitions/Group"
+        },
+        "route": {
+          "$ref": "#/definitions/Route"
+        }
+      },
+      "additionalProperties": false
+    },
+    "LoginModel": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Product": {
+      "type": "object",
+      "properties": {
+        "productId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "stockQuantity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "categoryId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "condition": {
+          "type": "string"
+        },
+        "createdTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "bookingProducts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BookingProduct"
+          }
+        },
+        "category": {
+          "$ref": "#/definitions/ProductsCategory"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ProductsCategory": {
+      "type": "object",
+      "properties": {
+        "categoryId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "categoryName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "products": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Product"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "RegisterLoginModel": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fullName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "roleId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "address": {
+          "type": "string"
+        },
+        "updatedTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "memberShipId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Review": {
+      "type": "object",
+      "properties": {
+        "reviewId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "targetId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "targetType": {
+          "type": "string"
+        },
+        "rating": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "content": {
+          "type": "string"
+        },
+        "createdTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "user": {
+          "$ref": "#/definitions/User"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Role": {
+      "type": "object",
+      "properties": {
+        "roleId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "roleName": {
+          "type": "string"
+        },
+        "permissions": {
+          "type": "string"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/User"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Route": {
+      "type": "object",
+      "properties": {
+        "routeId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "creatorId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "startLocation": {
+          "type": "string"
+        },
+        "endLocation": {
+          "type": "string"
+        },
+        "distance": {
+          "format": "double",
+          "type": "number"
+        },
+        "estimatedTime": {
+          "format": "double",
+          "type": "number"
+        },
+        "routeDescription": {
+          "type": "string"
+        },
+        "sharedWithPublic": {
+          "type": "boolean"
+        },
+        "createdTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "routePath": {
+          "type": "string"
+        },
+        "segmentPolyline": {
+          "type": "string"
+        },
+        "streetList": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "creator": {
+          "$ref": "#/definitions/User"
+        },
+        "groupRoutes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GroupRoute"
+          }
+        },
+        "routeCheckpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RouteCheckpoint"
+          }
+        },
+        "routeReferences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RouteReference"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "RouteCheckpoint": {
+      "type": "object",
+      "properties": {
+        "pointId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "segmentId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pointNumber": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pointName": {
+          "type": "string"
+        },
+        "sequenceNumber": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "lng": {
+          "format": "double",
+          "type": "number"
+        },
+        "status": {
+          "type": "string"
+        },
+        "segment": {
+          "$ref": "#/definitions/Route"
+        }
+      },
+      "additionalProperties": false
+    },
+    "RouteReference": {
+      "type": "object",
+      "properties": {
+        "referenceId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "blogId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "routeId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "blog": {
+          "$ref": "#/definitions/Blog"
+        },
+        "route": {
+          "$ref": "#/definitions/Route"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Service": {
+      "type": "object",
+      "properties": {
+        "serviceId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "serviceName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "price": {
+          "format": "double",
+          "type": "number"
+        },
+        "availability": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "estimatedTime": {
+          "format": "double",
+          "type": "number"
+        },
+        "rating": {
+          "format": "double",
+          "type": "number"
+        },
+        "categoryId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "bookingServices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BookingService"
+          }
+        },
+        "category": {
+          "$ref": "#/definitions/ServiceCategory"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ServiceCategory": {
+      "type": "object",
+      "properties": {
+        "categoryId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "categoryName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "services": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Service"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "UpdateProductCategoryModel": {
+      "type": "object",
+      "properties": {
+        "categoryName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UpdateServiceCategoryModel": {
+      "type": "object",
+      "properties": {
+        "categoryName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fullName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "roleId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "address": {
+          "type": "string"
+        },
+        "isEmailConfirmed": {
+          "type": "boolean"
+        },
+        "emailConfirmationToken": {
+          "type": "string"
+        },
+        "createdTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "updatedTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "memberShipId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "blogs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Blog"
+          }
+        },
+        "bookings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Booking"
+          }
+        },
+        "chatOfGroups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ChatOfGroup"
+          }
+        },
+        "groupMembers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GroupMember"
+          }
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Group"
+          }
+        },
+        "reviews": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Review"
+          }
+        },
+        "role": {
+          "$ref": "#/definitions/Role"
+        },
+        "routes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Route"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "WeatherForecast": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "format": "date",
+          "type": "string"
+        },
+        "temperatureC": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "temperatureF": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "summary": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

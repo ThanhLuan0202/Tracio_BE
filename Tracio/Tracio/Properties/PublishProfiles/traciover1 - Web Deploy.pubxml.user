@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuYAO/9FlWkaccAFJBwGcXAAAAAACAAAAAAAQZgAAAAEAACAAAAD1rbsOGsRow8KqgbbSZUYk/JI9PUeCju0t0SHnWjP1FgAAAAAOgAAAAAIAACAAAABIR2BVtSfPmQspUd+CF13yUfSrtt0t2s3EV1RAXTgfOYAAAACZAT9AHdDxl2slD8NhYxiZseK+1Rxx8W7/4JpOiZXT/UCrDrBobM6Kt19BS08s7df4lKumdNMT/qw4bLZ8xThR7gt+5p0vDpVaVQqTQHKWe29lmgaFJbNk9EvJW7iY3Wvj/LhrsC9WD5VkjfmR2SwZWK44FiGvV2AasG6MnjVEu0AAAAD6b3t4ZetB8Z3KvuGfjQuVZnvZepVS+irphME23ib2q/I2kSg5R0LDubJ8uoZvkk4jN9qXpvgRb4LxVkA3a83a</EncryptedPassword>
+    <History>False|2025-03-27T07:43:30.2690112Z||;True|2025-03-27T14:32:28.3001713+07:00||;True|2025-03-27T14:26:27.8527378+07:00||;True|2025-03-27T13:41:18.5310253+07:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="Tracio.Data.Data.TracioDbContext">
+      <Value>Data Source=tracio-database.database.windows.net,1433%3bInitial Catalog=TracioDb%3bUser ID=traciodatabase%3bPassword=K0cogilamkodc</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

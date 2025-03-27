@@ -101,12 +101,16 @@ var app = builder.Build();
 
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwagger();
+/*app.UseSwaggerUI();*/
+app.UseSwaggerUI(c =>
 {
-   
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Tracio API V1");
+    c.RoutePrefix = string.Empty; // Đặt Swagger làm trang chủ
+});
+
+
 
 app.UseHttpsRedirection();
 

@@ -10486,19 +10486,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luann\\.nuget\\packages\\": {}
+    "C:\\Users\\sasuk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luann\\OneDrive\\Máy tính\\be2\\Tracio_BE\\Tracio\\Tracio\\Tracio.API.csproj",
+      "projectUniqueName": "C:\\Users\\sasuk\\OneDrive\\Máy tính\\be\\Tracio_BE\\Tracio\\Tracio\\Tracio.API.csproj",
       "projectName": "Tracio.API",
-      "projectPath": "C:\\Users\\luann\\OneDrive\\Máy tính\\be2\\Tracio_BE\\Tracio\\Tracio\\Tracio.API.csproj",
-      "packagesPath": "C:\\Users\\luann\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luann\\OneDrive\\Máy tính\\be2\\Tracio_BE\\Tracio\\Tracio\\obj\\",
+      "projectPath": "C:\\Users\\sasuk\\OneDrive\\Máy tính\\be\\Tracio_BE\\Tracio\\Tracio\\Tracio.API.csproj",
+      "packagesPath": "C:\\Users\\sasuk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sasuk\\OneDrive\\Máy tính\\be\\Tracio_BE\\Tracio\\Tracio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\luann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sasuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10513,8 +10513,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\luann\\OneDrive\\Máy tính\\be2\\Tracio_BE\\Tracio\\Tracio.Service\\Tracio.Service.csproj": {
-              "projectPath": "C:\\Users\\luann\\OneDrive\\Máy tính\\be2\\Tracio_BE\\Tracio\\Tracio.Service\\Tracio.Service.csproj"
+            "C:\\Users\\sasuk\\OneDrive\\Máy tính\\be\\Tracio_BE\\Tracio\\Tracio.Service\\Tracio.Service.csproj": {
+              "projectPath": "C:\\Users\\sasuk\\OneDrive\\Máy tính\\be\\Tracio_BE\\Tracio\\Tracio.Service\\Tracio.Service.csproj"
             }
           }
         }
@@ -10602,7 +10602,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

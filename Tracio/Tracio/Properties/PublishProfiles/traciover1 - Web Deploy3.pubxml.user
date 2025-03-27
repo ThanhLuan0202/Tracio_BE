@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuYAO/9FlWkaccAFJBwGcXAAAAAACAAAAAAAQZgAAAAEAACAAAAA607NYS8KhjAwb1+XKZ8+Kb8mmR4MOrTX0x0+YI+hbEAAAAAAOgAAAAAIAACAAAABmuYv6q+qM6mDQXiIMBbAjqWbJ4Kcn7uYSYyqj2dKkMoAAAAApt1V2PYMEYPThobt1ZC4Vh30smeB1inVHr8l3qYplRx3ywuV0I916DAy/GUTS7rnPDYgZqEKB9JJlVQAHmzVG65vYhulLP8iWHRLVlyPbFNcobaadD4k8QZmHTEoTXRcqgarrqxL/gRMVvlUxQQ2olPfVM1XwXlwGbghWKUUXf0AAAACGjK14fGrXorrib7tuigTWLB8q4x+M+okYh5XDZ4g3VjOjBaGVqJIVMCYGHbea9Dy4L+HwWGgCph5mp9p33qZA</EncryptedPassword>
+    <History>True|2025-03-27T14:04:20.3777118Z||;True|2025-03-27T21:02:28.9190157+07:00||;True|2025-03-27T20:58:07.5958343+07:00||;True|2025-03-27T20:55:45.8912064+07:00||;True|2025-03-27T20:41:58.9286614+07:00||;True|2025-03-27T20:30:31.0866475+07:00||;True|2025-03-27T20:22:24.1883320+07:00||;True|2025-03-27T20:09:27.2489987+07:00||;False|2025-03-27T20:07:36.1204156+07:00||;False|2025-03-27T20:04:12.4384534+07:00||;False|2025-03-27T20:02:01.8890727+07:00||;True|2025-03-27T19:46:42.4436037+07:00||;True|2025-03-27T19:33:26.0295573+07:00||;True|2025-03-27T19:28:40.3913282+07:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="Tracio.Data.Data.TracioDbContext">
+      <Value>Data Source=tracio-database.database.windows.net,1433%3bInitial Catalog=traciodatabase%3bUser ID=traciodatabase%3bPassword=K0cogilamkodc</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

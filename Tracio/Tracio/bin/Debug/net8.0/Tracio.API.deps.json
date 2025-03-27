@@ -1965,10 +1965,7 @@
           "Microsoft.Extensions.DependencyInjection": "9.0.2"
         },
         "runtime": {
-          "Tracio.Data.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Tracio.Data.dll": {}
         }
       },
       "Tracio.Service/1.0.0": {
@@ -1978,10 +1975,7 @@
           "Tracio.Data": "1.0.0"
         },
         "runtime": {
-          "Tracio.Service.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Tracio.Service.dll": {}
         }
       }
     }
